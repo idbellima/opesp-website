@@ -354,21 +354,12 @@ function toggleBackToTop() {
 })();
 
 /* ================================================================
-   14. Typing effect for hero tagline (optional subtle effect)
+   14. Hero badge entrance animation (CSS handles the rest)
 ================================================================ */
-(function initHeroTyping() {
+(function initHeroBadge() {
   const el = document.querySelector('.hero__badge');
   if (!el) return;
-
-  // Subtle shimmer animation on badge
-  let opacity = 1;
-  let direction = -1;
-
-  setInterval(() => {
-    opacity += direction * 0.008;
-    if (opacity <= 0.7) direction = 1;
-    if (opacity >= 1)   direction = -1;
-  }, 50);
+  el.style.opacity = '1';
 })();
 
 /* ================================================================
