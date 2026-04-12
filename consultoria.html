@@ -1,209 +1,298 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="OPESP — Consultoria. Assessoria especializada em relações governamentais e legislativas.">
-  <title>Consultoria — OPESP</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultoria e Assessoria - OPESP</title>
+  <meta name="description" content="A OPESP oferece serviços especializados de relacionamento institucional, assessoria parlamentar, estratégia de influência e organização de eventos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body data-page="consultoria">
+<body>
 
-<div class="preloader" id="preloader"><div class="preloader__spinner"></div></div>
-
-<nav class="nav" id="nav">
-  <div class="container">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <span class="nav__logo-main">OPESP<span class="nav__logo-dot">.</span></span>
-        <span class="nav__logo-sub">Ordem dos Parlamentares SP</span>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="OPESP - Página inicial">
+        <div class="navbar-logo-badge">
+          <span class="navbar-logo-text">OPESP</span>
+          <span class="navbar-logo-sub">Estado de São Paulo</span>
+        </div>
       </a>
-      <ul class="nav__menu">
-        <li><a href="index.html" class="nav__link" data-page="index">Início</a></li>
-        <li><a href="historia.html" class="nav__link" data-page="historia">História</a></li>
-        <li><a href="premio.html" class="nav__link" data-page="premio">Prêmio Top Business</a></li>
-        <li><a href="consultoria.html" class="nav__link" data-page="consultoria">Consultoria</a></li>
-        <li><a href="eventos.html" class="nav__link" data-page="eventos">Eventos</a></li>
-        <li><a href="membros.html" class="nav__link" data-page="membros">Membros</a></li>
-        <li><a href="noticias.html" class="nav__link" data-page="noticias">Notícias</a></li>
-        <li><a href="videos.html" class="nav__link" data-page="videos">Vídeos</a></li>
-        <li><a href="parcerias.html" class="nav__link" data-page="parcerias">Parcerias</a></li>
-        <li><a href="contato.html" class="nav__link" data-page="contato">Contato</a></li>
-      </ul>
-      <a href="seja-membro.html" class="nav__cta">Seja Membro</a>
-      <button class="nav__hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-  <div class="nav__drawer">
-    <button class="nav__drawer-close" aria-label="Fechar menu"><i class="fas fa-times"></i></button>
-    <a href="index.html" class="nav__drawer-link">Início</a>
-    <a href="historia.html" class="nav__drawer-link">Nossa História</a>
-    <a href="premio.html" class="nav__drawer-link">Prêmio Top Business</a>
-    <a href="consultoria.html" class="nav__drawer-link">Consultoria</a>
-    <a href="eventos.html" class="nav__drawer-link">Eventos</a>
-    <a href="membros.html" class="nav__drawer-link">Membros</a>
-    <a href="noticias.html" class="nav__drawer-link">Notícias</a>
-    <a href="videos.html" class="nav__drawer-link">Vídeos</a>
-    <a href="parcerias.html" class="nav__drawer-link">Parcerias</a>
-    <a href="seja-membro.html" class="nav__drawer-link">Seja Membro</a>
-    <a href="contato.html" class="nav__drawer-link">Fale Conosco</a>
-  </div>
-  <div class="nav__overlay"></div>
-</nav>
-
-<main class="page-enter">
-
-  <div class="page-hero">
-    <div class="container">
-      <div class="page-hero__content">
-        <h1 class="page-hero__title">Consultoria <span>Especializada</span></h1>
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Início</a>
-          <i class="fas fa-chevron-right"></i>
-          <span>Consultoria</span>
-        </nav>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="historia.html">Nossa História</a>
+        <a href="premio.html">Top Business</a>
+        <a href="consultoria.html" class="active">Consultoria</a>
+        <a href="eventos.html">Grandes Eventos</a>
+        <a href="membros.html">Membros</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="parcerias.html">Parcerias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="seja-membro.html" class="btn btn-gold btn-sm">Seja Membro</a>
+        <button class="navbar-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="navbar-mobile" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="historia.html">Nossa História</a>
+    <a href="premio.html">Prêmio Top Business</a>
+    <a href="consultoria.html" class="active">Consultoria</a>
+    <a href="eventos.html">Grandes Eventos</a>
+    <a href="membros.html">Membros</a>
+    <a href="noticias.html">Notícias</a>
+    <a href="videos.html">Vídeos</a>
+    <a href="parcerias.html">Parcerias</a>
+    <a href="contato.html">Contato</a>
+    <a href="seja-membro.html" class="btn btn-gold">Seja Membro</a>
   </div>
 
-  <!-- Intro -->
-  <section style="background:var(--bg-primary);padding:80px 0;" class="fade-in">
+  <!-- PAGE BANNER -->
+  <section class="page-banner" aria-label="Consultoria e Assessoria">
     <div class="container">
-      <div style="max-width:780px;margin:0 auto;">
-        <h2 class="section-title">Assessoria em Relações Governamentais</h2>
-        <div class="gold-line"></div>
-        <p style="color:var(--text-secondary);line-height:1.85;margin-bottom:1rem;">A OPESP oferece consultoria especializada para empresas, entidades e profissionais que necessitam navegar o complexo ambiente político-legislativo brasileiro. Com mais de 31 anos de relacionamento com o setor público e parlamentar, nossa assessoria garante resultados concretos e sustentáveis.</p>
-        <p style="color:var(--text-secondary);line-height:1.85;">Nosso trabalho é pautado pela ética, transparência e pelo profundo conhecimento das esferas municipal, estadual e federal do poder legislativo.</p>
+      <span class="page-banner-label">Serviços Especializados</span>
+      <h1 class="page-banner-title">Consultoria e Assessoria</h1>
+      <p class="page-banner-sub">Expertise institucional ao serviço de quem quer transformar São Paulo com inteligência, estratégia e conexões de alto nível.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span class="current">Consultoria e Assessoria</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section bg-white" aria-labelledby="consultoria-intro">
+    <div class="container">
+      <div class="section-header center text-center" style="max-width: 780px; margin: 0 auto 60px;">
+        <span class="section-label">Nossa Expertise</span>
+        <h2 class="section-title" id="consultoria-intro">Mais de três décadas navegando nos ambientes de poder em São Paulo</h2>
+        <div class="gold-divider center"></div>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          A OPESP acumulou ao longo de sua história um conhecimento profundo das dinâmicas institucionais, parlamentares e empresariais do Estado de São Paulo. Esse conhecimento está agora disponível para empresas, lideranças e organizações que desejam atuar com inteligência no cenário político e institucional paulista.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- 4 Serviços -->
-  <section style="background:var(--bg-secondary);padding:80px 0;" class="fade-in">
+  <!-- SERVICO 1: RELACIONAMENTO INSTITUCIONAL -->
+  <section class="service-section bg-white" aria-labelledby="serv1-title">
     <div class="container">
-      <h2 class="section-title" style="text-align:center;">Nossos Serviços</h2>
-      <div class="gold-line gold-line--center"></div>
-      <p class="section-subtitle" style="text-align:center;">Soluções completas para sua estratégia governamental</p>
-      <div class="services-full-grid">
-        <div class="service-full-card">
-          <div class="service-full-card__icon"><span>01</span><i class="fas fa-search"></i></div>
-          <h3>Consultoria Técnica Legislativa</h3>
-          <p>Análise especializada de projetos de lei, medidas provisórias, decretos e demais atos normativos. Avaliamos o impacto de matérias legislativas em tramitação para empresas e entidades que necessitam compreender e antecipar mudanças regulatórias em suas atividades.</p>
+      <div class="service-section-inner">
+        <div>
+          <p class="service-number">01</p>
+          <span class="section-label">Serviço</span>
+          <h2 class="section-title" id="serv1-title">Relacionamento Institucional</h2>
+          <div class="gold-divider"></div>
+          <p style="color: var(--text-body); line-height: 1.8; margin-bottom: 20px;">
+            Construir relacionamentos institucionais sólidos exige muito mais do que cartões de visita e reuniões formais. Exige tempo, credibilidade e o conhecimento profundo de quem é quem nos ambientes de poder.
+          </p>
+          <p style="color: var(--text-body); line-height: 1.8; margin-bottom: 28px;">
+            A OPESP dispõe de uma rede de relacionamentos cuidadosamente cultivada ao longo de três décadas, conectando empresas e organizações com os agentes certos, no momento certo, com a abordagem adequada.
+          </p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i>Mapeamento de stakeholders relevantes para sua atuação</li>
+            <li><i class="fa-solid fa-check"></i>Mediação de encontros e reuniões estratégicas</li>
+            <li><i class="fa-solid fa-check"></i>Construção de alianças com parlamentares e gestores públicos</li>
+            <li><i class="fa-solid fa-check"></i>Representação em ambientes institucionais de alto nível</li>
+            <li><i class="fa-solid fa-check"></i>Monitoramento do ambiente político e institucional</li>
+          </ul>
         </div>
-        <div class="service-full-card">
-          <div class="service-full-card__icon"><span>02</span><i class="fas fa-handshake"></i></div>
-          <h3>Relacionamento Governamental</h3>
-          <p>Facilitação do diálogo entre o setor privado e as diversas esferas do governo — municipal, estadual e federal. Atuamos de forma ética e transparente, construindo pontes entre as demandas do setor privado e as necessidades e prioridades do poder público.</p>
-        </div>
-        <div class="service-full-card">
-          <div class="service-full-card__icon"><span>03</span><i class="fas fa-briefcase"></i></div>
-          <h3>Assessoria em Relações Governamentais</h3>
-          <p>Suporte estratégico completo para navegação no complexo ambiente político-legislativo brasileiro. Elaboramos estratégias de advocacia corporativa, monitoramos o cenário político e orientamos a tomada de decisões com foco em resultados concretos e sustentáveis.</p>
-        </div>
-        <div class="service-full-card">
-          <div class="service-full-card__icon"><span>04</span><i class="fas fa-file-alt"></i></div>
-          <h3>Elaboração de Projetos Legislativos</h3>
-          <p>Redação técnica e juridicamente embasada de proposições legislativas — projetos de lei, emendas, requerimentos, moções e outros documentos parlamentares — alinhadas às necessidades e objetivos estratégicos do cliente, com linguagem adequada ao processo legislativo.</p>
+        <div class="service-visual">
+          <i class="fa-solid fa-handshake"></i>
+          <span class="service-visual-label">Relacionamento Institucional</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Por que OPESP -->
-  <section style="background:var(--bg-primary);padding:80px 0;" class="fade-in">
+  <!-- SERVICO 2: ASSESSORIA PARLAMENTAR -->
+  <section class="service-section bg-light" aria-labelledby="serv2-title">
     <div class="container">
-      <h2 class="section-title" style="text-align:center;">Por que Escolher a OPESP?</h2>
-      <div class="gold-line gold-line--center"></div>
-      <div class="premio-features-grid">
-        <div class="feature-card">
-          <i class="fas fa-history"></i>
-          <h3>31+ Anos de Experiência</h3>
-          <p>Três décadas de relacionamento sólido com o ambiente parlamentar e governamental paulista.</p>
+      <div class="service-section-inner reverse">
+        <div>
+          <p class="service-number">02</p>
+          <span class="section-label">Serviço</span>
+          <h2 class="section-title" id="serv2-title">Assessoria Parlamentar</h2>
+          <div class="gold-divider"></div>
+          <p style="color: var(--text-body); line-height: 1.8; margin-bottom: 20px;">
+            A atividade parlamentar exige uma combinação rara de conhecimento técnico, sensibilidade política e capacidade de comunicação. Assessorar um parlamentar bem é garantir que sua voz chegue onde deve chegar com o impacto que merece.
+          </p>
+          <p style="color: var(--text-body); line-height: 1.8; margin-bottom: 28px;">
+            A equipe da OPESP oferece suporte especializado em todas as dimensões da atuação parlamentar, da estratégia legislativa à presença pública, com discrição, rigor e comprometimento.
+          </p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i>Estratégia legislativa e análise de pautas prioritárias</li>
+            <li><i class="fa-solid fa-check"></i>Elaboração de pronunciamentos e discursos institucionais</li>
+            <li><i class="fa-solid fa-check"></i>Comunicação parlamentar e gestão de imagem pública</li>
+            <li><i class="fa-solid fa-check"></i>Articulação com bancadas e lideranças do legislativo</li>
+            <li><i class="fa-solid fa-check"></i>Relacionamento com imprensa e formadores de opinião</li>
+          </ul>
         </div>
-        <div class="feature-card">
-          <i class="fas fa-network-wired"></i>
-          <h3>Rede de Relacionamentos</h3>
-          <p>Acesso a uma ampla rede de parlamentares, autoridades e lideranças das três esferas de governo.</p>
+        <div class="service-visual">
+          <i class="fa-solid fa-landmark"></i>
+          <span class="service-visual-label">Assessoria Parlamentar</span>
         </div>
-        <div class="feature-card">
-          <i class="fas fa-balance-scale"></i>
-          <h3>Ética e Transparência</h3>
-          <p>Atuação pautada pela mais rigorosa ética profissional, transparência e conformidade legal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICO 3: ESTRATEGIA DE INFLUENCIA -->
+  <section class="service-section bg-white" aria-labelledby="serv3-title">
+    <div class="container">
+      <div class="service-section-inner">
+        <div>
+          <p class="service-number">03</p>
+          <span class="section-label">Serviço</span>
+          <h2 class="section-title" id="serv3-title">Estratégia de Influência</h2>
+          <div class="gold-divider"></div>
+          <p style="color: var(--text-body); line-height: 1.8; margin-bottom: 20px;">
+            Influência institucional não se improvisa. Ela é construída com consistência, presença e a capacidade de ser reconhecido como uma referência nos ambientes que importam. É uma obra de longo prazo que exige método e visão estratégica.
+          </p>
+          <p style="color: var(--text-body); line-height: 1.8; margin-bottom: 28px;">
+            A OPESP orienta líderes, empresas e organizações na construção de uma presença institucional robusta, capaz de abrir portas, gerar credibilidade e transformar a percepção dos públicos de interesse.
+          </p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i>Diagnóstico e posicionamento institucional</li>
+            <li><i class="fa-solid fa-check"></i>Estratégia de visibilidade em ambientes de poder</li>
+            <li><i class="fa-solid fa-check"></i>Participação em eventos de alto nível da OPESP</li>
+            <li><i class="fa-solid fa-check"></i>Candidatura a prêmios e reconhecimentos institucionais</li>
+            <li><i class="fa-solid fa-check"></i>Assessoria de reputação e gestão de crise institucional</li>
+          </ul>
+        </div>
+        <div class="service-visual">
+          <i class="fa-solid fa-chess-king"></i>
+          <span class="service-visual-label">Estratégia de Influência</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICO 4: EVENTOS E RECONHECIMENTOS -->
+  <section class="service-section bg-light" aria-labelledby="serv4-title">
+    <div class="container">
+      <div class="service-section-inner reverse">
+        <div>
+          <p class="service-number">04</p>
+          <span class="section-label">Serviço</span>
+          <h2 class="section-title" id="serv4-title">Eventos e Reconhecimentos</h2>
+          <div class="gold-divider"></div>
+          <p style="color: var(--text-body); line-height: 1.8; margin-bottom: 20px;">
+            Grandes eventos institucionais são mais do que cerimônias. São momentos de construção de legado, de fortalecimento de redes e de consolidação de reputação. Quando bem concebidos e executados, ficam na memória dos que participam e reverberam muito além das quatro paredes do evento.
+          </p>
+          <p style="color: var(--text-body); line-height: 1.8; margin-bottom: 28px;">
+            Com mais de 350 eventos realizados ao longo de três décadas, a OPESP acumulou um conhecimento ímpar na concepção, organização e condução de eventos institucionais de alto padrão em São Paulo.
+          </p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i>Concepção e organização de eventos institucionais de gala</li>
+            <li><i class="fa-solid fa-check"></i>Cerimônias de premiação e entrega de honrarias</li>
+            <li><i class="fa-solid fa-check"></i>Encontros e fóruns de lideranças políticas e empresariais</li>
+            <li><i class="fa-solid fa-check"></i>Jantares e almoços institucionais de relacionamento</li>
+            <li><i class="fa-solid fa-check"></i>Patrocínio e associação de marca a eventos da OPESP</li>
+          </ul>
+        </div>
+        <div class="service-visual">
+          <i class="fa-solid fa-award"></i>
+          <span class="service-visual-label">Eventos e Reconhecimentos</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-banner fade-in">
-    <div class="container">
-      <div class="cta-banner__inner">
-        <h2>Pronto para fortalecer sua estratégia governamental?</h2>
-        <p>Entre em contato com nossa equipe e descubra como a OPESP pode apoiar os objetivos da sua organização.</p>
-        <div class="cta-banner__actions">
-          <a href="contato.html" class="btn btn--gold"><i class="fas fa-envelope"></i> Solicitar Consultoria</a>
-        </div>
+  <section class="cta-section" aria-labelledby="cta-consultoria">
+    <div class="container" style="position: relative; z-index: 1;">
+      <span class="section-label" style="display: block; text-align: center; margin-bottom: 16px;">Vamos Conversar</span>
+      <h2 class="section-title" id="cta-consultoria">Pronto para atuar com mais inteligência e influência?</h2>
+      <p class="section-subtitle light text-center" style="margin: 0 auto 40px;">
+        Entre em contato com a OPESP e descubra como nossa expertise pode servir aos seus objetivos institucionais.
+      </p>
+      <div class="cta-actions">
+        <a href="contato.html" class="btn btn-gold btn-lg">Entrar em Contato</a>
+        <a href="seja-membro.html" class="btn btn-outline-white btn-lg">Seja Membro</a>
       </div>
     </div>
   </section>
 
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <div class="footer__logo">OPESP<span>.</span></div>
-        <p class="footer__desc">Ordem dos Parlamentares do Estado de São Paulo — Entidade civil de direito privado, fundada em 21 de maio de 1994.</p>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">OPESP</span>
+          <span class="footer-logo-sub">Ordem dos Parlamentares do Estado de São Paulo</span>
+          <p class="footer-desc">Desde 1994, reunindo parlamentares e lideranças paulistas em torno do reconhecimento, da colaboração e do desenvolvimento do Estado de São Paulo.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Navegação</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="historia.html">Nossa História</a>
+            <a href="premio.html">Prêmio Top Business</a>
+            <a href="eventos.html">Grandes Eventos</a>
+            <a href="consultoria.html">Consultoria</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Institucional</p>
+          <div class="footer-links">
+            <a href="membros.html">Membros</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="videos.html">Vídeos</a>
+            <a href="parcerias.html">Parcerias</a>
+            <a href="seja-membro.html">Seja Membro</a>
+            <a href="contato.html">Contato</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Contato</p>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>contato@opesp.org.br</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp disponível</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>São Paulo, SP</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Navegação</h4>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="historia.html">Nossa História</a></li>
-          <li><a href="premio.html">Prêmio Top Business</a></li>
-          <li><a href="consultoria.html">Consultoria</a></li>
-          <li><a href="eventos.html">Eventos</a></li>
-          <li><a href="membros.html">Membros</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Mais</h4>
-        <ul>
-          <li><a href="noticias.html">Notícias</a></li>
-          <li><a href="videos.html">Vídeos</a></li>
-          <li><a href="parcerias.html">Parcerias</a></li>
-          <li><a href="seja-membro.html">Seja Membro</a></li>
-          <li><a href="contato.html">Fale Conosco</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Informações Legais</h4>
-        <ul class="footer__legal">
-          <li><i class="fas fa-file-alt"></i> Registro nº 282.360/94</li>
-          <li><i class="fas fa-balance-scale"></i> Lei Federal nº 10.406/2002</li>
-          <li><i class="fas fa-building"></i> Mantenedora: Aslam Innovations</li>
-          <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP — Brasil</li>
-        </ul>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copyright">&copy; 2025 OPESP. Presidenta: Gabriela Aguiar. Desenvolvido por <a href="#">Aslam Innovations</a>.</p>
+          <div class="footer-legal">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <p>&copy; 2026 OPESP — Ordem dos Parlamentares do Estado de São Paulo. Todos os direitos reservados.</p>
-    </div>
-  </div>
-  <button class="back-to-top" aria-label="Voltar ao topo" id="backToTop"><i class="fas fa-chevron-up"></i></button>
-</footer>
+  </footer>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

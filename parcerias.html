@@ -1,193 +1,263 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="OPESP — Parcerias. Conheça os parceiros estratégicos da Ordem dos Parlamentares do Estado de São Paulo.">
-  <title>Parcerias — OPESP</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcerias - OPESP</title>
+  <meta name="description" content="Conheça as parcerias institucionais da OPESP. Empresas e organizações que apoiam a missão da Ordem dos Parlamentares do Estado de São Paulo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body data-page="parcerias">
+<body>
 
-<div class="preloader" id="preloader"><div class="preloader__spinner"></div></div>
-
-<nav class="nav" id="nav">
-  <div class="container">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <span class="nav__logo-main">OPESP<span class="nav__logo-dot">.</span></span>
-        <span class="nav__logo-sub">Ordem dos Parlamentares SP</span>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="OPESP - Página inicial">
+        <div class="navbar-logo-badge">
+          <span class="navbar-logo-text">OPESP</span>
+          <span class="navbar-logo-sub">Estado de São Paulo</span>
+        </div>
       </a>
-      <ul class="nav__menu">
-        <li><a href="index.html" class="nav__link" data-page="index">Início</a></li>
-        <li><a href="historia.html" class="nav__link" data-page="historia">História</a></li>
-        <li><a href="premio.html" class="nav__link" data-page="premio">Prêmio Top Business</a></li>
-        <li><a href="consultoria.html" class="nav__link" data-page="consultoria">Consultoria</a></li>
-        <li><a href="eventos.html" class="nav__link" data-page="eventos">Eventos</a></li>
-        <li><a href="membros.html" class="nav__link" data-page="membros">Membros</a></li>
-        <li><a href="noticias.html" class="nav__link" data-page="noticias">Notícias</a></li>
-        <li><a href="videos.html" class="nav__link" data-page="videos">Vídeos</a></li>
-        <li><a href="parcerias.html" class="nav__link" data-page="parcerias">Parcerias</a></li>
-        <li><a href="contato.html" class="nav__link" data-page="contato">Contato</a></li>
-      </ul>
-      <a href="seja-membro.html" class="nav__cta">Seja Membro</a>
-      <button class="nav__hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-  <div class="nav__drawer">
-    <button class="nav__drawer-close" aria-label="Fechar menu"><i class="fas fa-times"></i></button>
-    <a href="index.html" class="nav__drawer-link">Início</a>
-    <a href="historia.html" class="nav__drawer-link">Nossa História</a>
-    <a href="premio.html" class="nav__drawer-link">Prêmio Top Business</a>
-    <a href="consultoria.html" class="nav__drawer-link">Consultoria</a>
-    <a href="eventos.html" class="nav__drawer-link">Eventos</a>
-    <a href="membros.html" class="nav__drawer-link">Membros</a>
-    <a href="noticias.html" class="nav__drawer-link">Notícias</a>
-    <a href="videos.html" class="nav__drawer-link">Vídeos</a>
-    <a href="parcerias.html" class="nav__drawer-link">Parcerias</a>
-    <a href="seja-membro.html" class="nav__drawer-link">Seja Membro</a>
-    <a href="contato.html" class="nav__drawer-link">Fale Conosco</a>
-  </div>
-  <div class="nav__overlay"></div>
-</nav>
-
-<main class="page-enter">
-
-  <div class="page-hero">
-    <div class="container">
-      <div class="page-hero__content">
-        <h1 class="page-hero__title">Nossas <span>Parcerias</span></h1>
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Início</a>
-          <i class="fas fa-chevron-right"></i>
-          <span>Parcerias</span>
-        </nav>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="historia.html">Nossa História</a>
+        <a href="premio.html">Top Business</a>
+        <a href="consultoria.html">Consultoria</a>
+        <a href="eventos.html">Grandes Eventos</a>
+        <a href="membros.html">Membros</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="parcerias.html" class="active">Parcerias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="seja-membro.html" class="btn btn-gold btn-sm">Seja Membro</a>
+        <button class="navbar-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="navbar-mobile" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="historia.html">Nossa História</a>
+    <a href="premio.html">Prêmio Top Business</a>
+    <a href="consultoria.html">Consultoria</a>
+    <a href="eventos.html">Grandes Eventos</a>
+    <a href="membros.html">Membros</a>
+    <a href="noticias.html">Notícias</a>
+    <a href="videos.html">Vídeos</a>
+    <a href="parcerias.html" class="active">Parcerias</a>
+    <a href="contato.html">Contato</a>
+    <a href="seja-membro.html" class="btn btn-gold">Seja Membro</a>
   </div>
 
-  <section style="background:var(--bg-primary);padding:80px 0;" class="fade-in">
+  <!-- PAGE BANNER -->
+  <section class="page-banner" aria-label="Parcerias OPESP">
     <div class="container">
-      <div style="max-width:680px;margin:0 auto 3rem;text-align:center;">
-        <h2 class="section-title">Parceiros Estratégicos</h2>
-        <div class="gold-line gold-line--center"></div>
-        <p style="color:var(--text-secondary);">A OPESP fortalece seu impacto através de parcerias estratégicas com organizações que compartilham os valores de excelência, transparência e compromisso com o desenvolvimento do Estado de São Paulo.</p>
+      <span class="page-banner-label">Colaboração e Apoio Institucional</span>
+      <h1 class="page-banner-title">Parcerias</h1>
+      <p class="page-banner-sub">Empresas e organizações que compartilham dos valores da OPESP e contribuem para a missão de reconhecer e promover a excelência em São Paulo.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span class="current">Parcerias</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- TEXTO SOBRE PARCERIAS -->
+  <section class="section bg-white" aria-labelledby="parcerias-intro">
+    <div class="container">
+      <div class="grid-2" style="align-items: center; gap: 80px;">
+        <div>
+          <span class="section-label">Parceiros da OPESP</span>
+          <h2 class="section-title" id="parcerias-intro">Parcerias que ampliam o impacto institucional</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle" style="margin-bottom: 24px;">
+            A OPESP construiu ao longo de três décadas uma rede de parceiros que acreditam no poder do reconhecimento e da colaboração institucional para transformar São Paulo.
+          </p>
+          <p style="color: var(--text-body); line-height: 1.8; margin-bottom: 24px;">
+            Ser parceiro da OPESP significa associar sua marca a uma instituição de prestígio reconhecido, com acesso a uma rede de lideranças políticas e empresariais de alto nível e visibilidade em eventos de grande repercussão.
+          </p>
+          <p style="color: var(--text-body); line-height: 1.8; margin-bottom: 36px;">
+            Nossas parcerias são construídas com base em afinidade de valores, complementaridade estratégica e compromisso com o desenvolvimento do Estado de São Paulo.
+          </p>
+          <a href="contato.html" class="btn btn-navy">Torne-se um Parceiro</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="card" style="padding: 28px;">
+            <div class="card-icon"><i class="fa-solid fa-handshake-simple"></i></div>
+            <h3 class="card-title">Parceria Estratégica</h3>
+            <p class="card-text">Presença em todos os eventos da OPESP, associação de marca ao Prêmio Top Business e acesso privilegiado à rede de membros e lideranças institucionais.</p>
+          </div>
+          <div class="card" style="padding: 28px;">
+            <div class="card-icon"><i class="fa-solid fa-star-half-stroke"></i></div>
+            <h3 class="card-title">Patrocínio de Eventos</h3>
+            <p class="card-text">Visibilidade direcionada em eventos específicos, com destaque de marca, espaço de ativação e presença no material de comunicação do evento.</p>
+          </div>
+          <div class="card" style="padding: 28px;">
+            <div class="card-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <h3 class="card-title">Apoio Institucional</h3>
+            <p class="card-text">Associação ao prestígio institucional da OPESP em publicações, materiais e comunicações da ordem, com menção como apoiador institucional.</p>
+          </div>
+        </div>
       </div>
-      <div class="partners-grid">
-        <div class="partner-card">
-          <i class="fas fa-calendar-alt"></i>
-          <h4>LSG Eventos</h4>
-          <p>Parceiro oficial na organização do Prêmio Top Business e demais eventos institucionais da OPESP.</p>
+    </div>
+  </section>
+
+  <!-- PARCEIROS -->
+  <section class="section bg-light" aria-labelledby="parceiros-logos">
+    <div class="container">
+      <div class="section-header center text-center" style="margin-bottom: 56px;">
+        <span class="section-label">Nossa Rede</span>
+        <h2 class="section-title" id="parceiros-logos">Parceiros e apoiadores da OPESP</h2>
+        <div class="gold-divider center"></div>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Empresas e organizações que escolheram caminhar ao lado da OPESP em sua missão de promover a excelência e o desenvolvimento de São Paulo.
+        </p>
+      </div>
+      <div class="partner-grid">
+        <div class="partner-logo slide-up">
+          <i class="fa-solid fa-building-columns"></i>
+          <span>Parceiro Institucional</span>
         </div>
-        <div class="partner-card">
-          <i class="fas fa-laptop-code"></i>
-          <h4>Aslam Innovations</h4>
-          <p>Empresa mantenedora e parceira tecnológica da OPESP, apoiando a modernização e gestão institucional.</p>
+        <div class="partner-logo slide-up" data-delay="50">
+          <i class="fa-solid fa-building"></i>
+          <span>Parceiro Empresarial</span>
         </div>
-        <div class="partner-card">
-          <i class="fas fa-building-columns"></i>
-          <h4>Entidades Parlamentares</h4>
-          <p>Parcerias com entidades legislativas municipais, estaduais e federais para promoção do diálogo democrático.</p>
+        <div class="partner-logo slide-up" data-delay="100">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Apoiador Estratégico</span>
         </div>
-        <div class="partner-card">
-          <i class="fas fa-handshake"></i>
-          <h4>Entidades de Classe</h4>
-          <p>Cooperação com federações, sindicatos e associações para fortalecimento do setor privado paulista.</p>
+        <div class="partner-logo slide-up" data-delay="150">
+          <i class="fa-solid fa-industry"></i>
+          <span>Patrocinador</span>
         </div>
-        <div class="partner-card">
-          <i class="fas fa-graduation-cap"></i>
-          <h4>Instituições de Ensino</h4>
-          <p>Parcerias acadêmicas para promoção de pesquisa e educação no campo das relações governamentais.</p>
+        <div class="partner-logo slide-up">
+          <i class="fa-solid fa-store"></i>
+          <span>Parceiro Comercial</span>
         </div>
-        <div class="partner-card">
-          <i class="fas fa-globe"></i>
-          <h4>Organismos Internacionais</h4>
-          <p>Cooperação com entidades internacionais para promoção de intercâmbio e parcerias estratégicas globais.</p>
+        <div class="partner-logo slide-up" data-delay="50">
+          <i class="fa-solid fa-globe"></i>
+          <span>Parceiro Internacional</span>
         </div>
-        <div class="partner-card">
-          <i class="fas fa-newspaper"></i>
-          <h4>Mídia Especializada</h4>
-          <p>Parceria com veículos de comunicação especializados para divulgação das atividades e reconhecimentos da OPESP.</p>
+        <div class="partner-logo slide-up" data-delay="100">
+          <i class="fa-solid fa-newspaper"></i>
+          <span>Parceiro de Mídia</span>
         </div>
-        <div class="partner-card">
-          <i class="fas fa-city"></i>
-          <h4>Prefeituras e Municípios</h4>
-          <p>Colaboração com municípios do Estado de São Paulo para promoção de eventos e iniciativas de desenvolvimento local.</p>
+        <div class="partner-logo slide-up" data-delay="150">
+          <i class="fa-solid fa-satellite-dish"></i>
+          <span>Apoiador de Comunicação</span>
+        </div>
+        <div class="partner-logo slide-up">
+          <i class="fa-solid fa-university"></i>
+          <span>Parceiro Educacional</span>
+        </div>
+        <div class="partner-logo slide-up" data-delay="50">
+          <i class="fa-solid fa-hospital"></i>
+          <span>Parceiro de Saúde</span>
+        </div>
+        <div class="partner-logo slide-up" data-delay="100">
+          <i class="fa-solid fa-leaf"></i>
+          <span>Parceiro Sustentável</span>
+        </div>
+        <div class="partner-logo slide-up" data-delay="150">
+          <i class="fa-solid fa-microchip"></i>
+          <span>Parceiro Tecnológico</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-banner fade-in">
-    <div class="container">
-      <div class="cta-banner__inner">
-        <h2>Interessado em ser parceiro da OPESP?</h2>
-        <p>Entre em contato e descubra as oportunidades de parceria com uma das entidades mais tradicionais de São Paulo.</p>
-        <div class="cta-banner__actions">
-          <a href="contato.html" class="btn btn--gold"><i class="fas fa-envelope"></i> Fale Conosco</a>
-        </div>
+  <section class="cta-section" aria-labelledby="cta-parcerias">
+    <div class="container" style="position: relative; z-index: 1;">
+      <h2 class="section-title" id="cta-parcerias">Sua empresa ao lado de quem move São Paulo</h2>
+      <p class="section-subtitle light text-center" style="margin: 0 auto 40px;">
+        Descubra as modalidades de parceria disponíveis e como a OPESP pode ampliar a presença institucional da sua organização.
+      </p>
+      <div class="cta-actions">
+        <a href="contato.html" class="btn btn-gold btn-lg">Falar sobre Parceria</a>
+        <a href="seja-membro.html" class="btn btn-outline-white btn-lg">Seja Membro</a>
       </div>
     </div>
   </section>
 
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <div class="footer__logo">OPESP<span>.</span></div>
-        <p class="footer__desc">Ordem dos Parlamentares do Estado de São Paulo — Entidade civil de direito privado, fundada em 21 de maio de 1994.</p>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">OPESP</span>
+          <span class="footer-logo-sub">Ordem dos Parlamentares do Estado de São Paulo</span>
+          <p class="footer-desc">Desde 1994, reunindo parlamentares e lideranças paulistas em torno do reconhecimento, da colaboração e do desenvolvimento do Estado de São Paulo.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Navegação</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="historia.html">Nossa História</a>
+            <a href="premio.html">Prêmio Top Business</a>
+            <a href="eventos.html">Grandes Eventos</a>
+            <a href="consultoria.html">Consultoria</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Institucional</p>
+          <div class="footer-links">
+            <a href="membros.html">Membros</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="videos.html">Vídeos</a>
+            <a href="parcerias.html">Parcerias</a>
+            <a href="seja-membro.html">Seja Membro</a>
+            <a href="contato.html">Contato</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Contato</p>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>contato@opesp.org.br</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp disponível</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>São Paulo, SP</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Navegação</h4>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="historia.html">Nossa História</a></li>
-          <li><a href="premio.html">Prêmio Top Business</a></li>
-          <li><a href="consultoria.html">Consultoria</a></li>
-          <li><a href="eventos.html">Eventos</a></li>
-          <li><a href="membros.html">Membros</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Mais</h4>
-        <ul>
-          <li><a href="noticias.html">Notícias</a></li>
-          <li><a href="videos.html">Vídeos</a></li>
-          <li><a href="parcerias.html">Parcerias</a></li>
-          <li><a href="seja-membro.html">Seja Membro</a></li>
-          <li><a href="contato.html">Fale Conosco</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Informações Legais</h4>
-        <ul class="footer__legal">
-          <li><i class="fas fa-file-alt"></i> Registro nº 282.360/94</li>
-          <li><i class="fas fa-balance-scale"></i> Lei Federal nº 10.406/2002</li>
-          <li><i class="fas fa-building"></i> Mantenedora: Aslam Innovations</li>
-          <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP — Brasil</li>
-        </ul>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copyright">&copy; 2025 OPESP. Presidenta: Gabriela Aguiar. Desenvolvido por <a href="#">Aslam Innovations</a>.</p>
+          <div class="footer-legal">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <p>&copy; 2026 OPESP — Ordem dos Parlamentares do Estado de São Paulo. Todos os direitos reservados.</p>
-    </div>
-  </div>
-  <button class="back-to-top" aria-label="Voltar ao topo" id="backToTop"><i class="fas fa-chevron-up"></i></button>
-</footer>
+  </footer>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

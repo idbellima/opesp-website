@@ -1,234 +1,269 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="OPESP — Membros. Conheça os membros da Ordem dos Parlamentares do Estado de São Paulo.">
-  <title>Membros — OPESP</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membros - OPESP</title>
+  <meta name="description" content="Um círculo seleto de líderes que fazem a diferença. Conheça os membros da Ordem dos Parlamentares do Estado de São Paulo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body data-page="membros">
+<body>
 
-<div class="preloader" id="preloader"><div class="preloader__spinner"></div></div>
-
-<nav class="nav" id="nav">
-  <div class="container">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <span class="nav__logo-main">OPESP<span class="nav__logo-dot">.</span></span>
-        <span class="nav__logo-sub">Ordem dos Parlamentares SP</span>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="OPESP - Página inicial">
+        <div class="navbar-logo-badge">
+          <span class="navbar-logo-text">OPESP</span>
+          <span class="navbar-logo-sub">Estado de São Paulo</span>
+        </div>
       </a>
-      <ul class="nav__menu">
-        <li><a href="index.html" class="nav__link" data-page="index">Início</a></li>
-        <li><a href="historia.html" class="nav__link" data-page="historia">História</a></li>
-        <li><a href="premio.html" class="nav__link" data-page="premio">Prêmio Top Business</a></li>
-        <li><a href="consultoria.html" class="nav__link" data-page="consultoria">Consultoria</a></li>
-        <li><a href="eventos.html" class="nav__link" data-page="eventos">Eventos</a></li>
-        <li><a href="membros.html" class="nav__link" data-page="membros">Membros</a></li>
-        <li><a href="noticias.html" class="nav__link" data-page="noticias">Notícias</a></li>
-        <li><a href="videos.html" class="nav__link" data-page="videos">Vídeos</a></li>
-        <li><a href="parcerias.html" class="nav__link" data-page="parcerias">Parcerias</a></li>
-        <li><a href="contato.html" class="nav__link" data-page="contato">Contato</a></li>
-      </ul>
-      <a href="seja-membro.html" class="nav__cta">Seja Membro</a>
-      <button class="nav__hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-  <div class="nav__drawer">
-    <button class="nav__drawer-close" aria-label="Fechar menu"><i class="fas fa-times"></i></button>
-    <a href="index.html" class="nav__drawer-link">Início</a>
-    <a href="historia.html" class="nav__drawer-link">Nossa História</a>
-    <a href="premio.html" class="nav__drawer-link">Prêmio Top Business</a>
-    <a href="consultoria.html" class="nav__drawer-link">Consultoria</a>
-    <a href="eventos.html" class="nav__drawer-link">Eventos</a>
-    <a href="membros.html" class="nav__drawer-link">Membros</a>
-    <a href="noticias.html" class="nav__drawer-link">Notícias</a>
-    <a href="videos.html" class="nav__drawer-link">Vídeos</a>
-    <a href="parcerias.html" class="nav__drawer-link">Parcerias</a>
-    <a href="seja-membro.html" class="nav__drawer-link">Seja Membro</a>
-    <a href="contato.html" class="nav__drawer-link">Fale Conosco</a>
-  </div>
-  <div class="nav__overlay"></div>
-</nav>
-
-<main class="page-enter">
-
-  <div class="page-hero">
-    <div class="container">
-      <div class="page-hero__content">
-        <h1 class="page-hero__title">Nossos <span>Membros</span></h1>
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Início</a>
-          <i class="fas fa-chevron-right"></i>
-          <span>Membros</span>
-        </nav>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="historia.html">Nossa História</a>
+        <a href="premio.html">Top Business</a>
+        <a href="consultoria.html">Consultoria</a>
+        <a href="eventos.html">Grandes Eventos</a>
+        <a href="membros.html" class="active">Membros</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="parcerias.html">Parcerias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="seja-membro.html" class="btn btn-gold btn-sm">Seja Membro</a>
+        <button class="navbar-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="navbar-mobile" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="historia.html">Nossa História</a>
+    <a href="premio.html">Prêmio Top Business</a>
+    <a href="consultoria.html">Consultoria</a>
+    <a href="eventos.html">Grandes Eventos</a>
+    <a href="membros.html" class="active">Membros</a>
+    <a href="noticias.html">Notícias</a>
+    <a href="videos.html">Vídeos</a>
+    <a href="parcerias.html">Parcerias</a>
+    <a href="contato.html">Contato</a>
+    <a href="seja-membro.html" class="btn btn-gold">Seja Membro</a>
   </div>
 
-  <section style="background:var(--bg-primary);padding:80px 0;" class="fade-in">
+  <!-- PAGE BANNER -->
+  <section class="page-banner" aria-label="Membros OPESP">
     <div class="container">
-      <h2 class="section-title" style="text-align:center;">Membros da OPESP</h2>
-      <div class="gold-line gold-line--center"></div>
-      <p class="section-subtitle" style="text-align:center;">Lideranças parlamentares, empresariais e institucionais que integram a OPESP</p>
+      <span class="page-banner-label">Círculo de Excelência</span>
+      <h1 class="page-banner-title">Membros OPESP</h1>
+      <p class="page-banner-sub">Um círculo seleto de líderes que fazem a diferença em São Paulo e no Brasil.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span class="current">Membros</span>
+      </nav>
+    </div>
+  </section>
 
-      <!-- Filtro -->
-      <div class="members-filter">
-        <input type="search" id="memberSearch" class="members-search" placeholder="Buscar membro..." aria-label="Buscar membro">
-        <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="parlamentar">Parlamentares</button>
-        <button class="filter-btn" data-filter="empresario">Empresários</button>
-        <button class="filter-btn" data-filter="lideranca">Lideranças</button>
+  <!-- INTRO -->
+  <section class="section-sm bg-white" aria-labelledby="membros-intro">
+    <div class="container">
+      <div class="section-header center text-center" style="max-width: 720px; margin: 0 auto;">
+        <span class="section-label">Quem integra a OPESP</span>
+        <h2 class="section-title" id="membros-intro">Líderes que constroem São Paulo</h2>
+        <div class="gold-divider center"></div>
+        <p class="section-subtitle" style="margin: 0 auto 40px;">
+          A OPESP reune parlamentares e personalidades que se distinguem pelo compromisso com o desenvolvimento do Estado de São Paulo. A admissão é baseada em mérito e alinhamento com os valores da instituição.
+        </p>
       </div>
+      <div class="filter-bar" style="max-width: 600px; margin: 0 auto;">
+        <input type="text" id="member-search" class="filter-input" placeholder="Buscar membro por nome ou área..." aria-label="Buscar membro" />
+      </div>
+    </div>
+  </section>
 
-      <div class="members-grid">
-        <div class="member-card" data-role="parlamentar">
-          <div class="member-card__avatar"><i class="fas fa-user-tie"></i></div>
-          <div class="member-card__role">Presidenta</div>
-          <h4>Gabriela Aguiar</h4>
-          <p>Presidente da OPESP desde 2021</p>
+  <!-- MEMBROS GRID -->
+  <section class="section bg-light" aria-labelledby="membros-lista">
+    <div class="container">
+      <div class="grid-4" id="members-grid">
+
+        <div class="member-card slide-up" data-name="Ana Paula Silveira" data-area="legislativo municipal">
+          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <h3 class="member-name">Ana Paula Silveira</h3>
+          <p class="member-role">Vereadora - São Paulo</p>
+          <p class="member-area">Legislativo Municipal</p>
         </div>
-        <div class="member-card" data-role="parlamentar">
-          <div class="member-card__avatar"><i class="fas fa-landmark"></i></div>
-          <div class="member-card__role">Parlamentar</div>
-          <h4>Membro Fundador</h4>
-          <p>Vereador, Estado de São Paulo</p>
+
+        <div class="member-card slide-up" data-delay="50" data-name="Carlos Eduardo Moraes" data-area="legislativo estadual">
+          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <h3 class="member-name">Carlos Eduardo Moraes</h3>
+          <p class="member-role">Deputado Estadual</p>
+          <p class="member-area">Legislativo Estadual</p>
         </div>
-        <div class="member-card" data-role="parlamentar">
-          <div class="member-card__avatar"><i class="fas fa-gavel"></i></div>
-          <div class="member-card__role">Parlamentar</div>
-          <h4>Membro Honorário</h4>
-          <p>Deputado Estadual, ALESP</p>
+
+        <div class="member-card slide-up" data-delay="100" data-name="Fernanda Ribeiro Costa" data-area="legislativo federal">
+          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <h3 class="member-name">Fernanda Ribeiro Costa</h3>
+          <p class="member-role">Deputada Federal</p>
+          <p class="member-area">Legislativo Federal</p>
         </div>
-        <div class="member-card" data-role="parlamentar">
-          <div class="member-card__avatar"><i class="fas fa-building-columns"></i></div>
-          <div class="member-card__role">Parlamentar</div>
-          <h4>Membro Titular</h4>
-          <p>Deputado Federal, Câmara dos Deputados</p>
+
+        <div class="member-card slide-up" data-delay="150" data-name="Roberto Almeida Netto" data-area="legislativo municipal">
+          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <h3 class="member-name">Roberto Almeida Netto</h3>
+          <p class="member-role">Vereador - Campinas</p>
+          <p class="member-area">Legislativo Municipal</p>
         </div>
-        <div class="member-card" data-role="empresario">
-          <div class="member-card__avatar"><i class="fas fa-briefcase"></i></div>
-          <div class="member-card__role">Empresário</div>
-          <h4>Membro Empresarial</h4>
-          <p>Setor Industrial, São Paulo</p>
+
+        <div class="member-card slide-up" data-name="Sônia Aparecida Lopes" data-area="legislativo estadual">
+          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <h3 class="member-name">Sônia Aparecida Lopes</h3>
+          <p class="member-role">Deputada Estadual</p>
+          <p class="member-area">Legislativo Estadual</p>
         </div>
-        <div class="member-card" data-role="empresario">
-          <div class="member-card__avatar"><i class="fas fa-chart-line"></i></div>
-          <div class="member-card__role">Empresário</div>
-          <h4>Membro Associado</h4>
-          <p>Mercado Financeiro, São Paulo</p>
+
+        <div class="member-card slide-up" data-delay="50" data-name="Marcelo Henrique Viana" data-area="legislativo federal">
+          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <h3 class="member-name">Marcelo Henrique Viana</h3>
+          <p class="member-role">Deputado Federal</p>
+          <p class="member-area">Legislativo Federal</p>
         </div>
-        <div class="member-card" data-role="empresario">
-          <div class="member-card__avatar"><i class="fas fa-store"></i></div>
-          <div class="member-card__role">Empresário</div>
-          <h4>Membro Correspondente</h4>
-          <p>Setor de Serviços, São Paulo</p>
+
+        <div class="member-card slide-up" data-delay="100" data-name="Patrícia Drummond" data-area="legislativo municipal">
+          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <h3 class="member-name">Patrícia Drummond</h3>
+          <p class="member-role">Vereadora - Santos</p>
+          <p class="member-area">Legislativo Municipal</p>
         </div>
-        <div class="member-card" data-role="empresario">
-          <div class="member-card__avatar"><i class="fas fa-industry"></i></div>
-          <div class="member-card__role">Empresário</div>
-          <h4>Membro Titular</h4>
-          <p>Indústria e Comércio, SP</p>
+
+        <div class="member-card slide-up" data-delay="150" data-name="Augusto Cavalcante" data-area="legislativo estadual">
+          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <h3 class="member-name">Augusto Cavalcante</h3>
+          <p class="member-role">Deputado Estadual</p>
+          <p class="member-area">Legislativo Estadual</p>
         </div>
-        <div class="member-card" data-role="lideranca">
-          <div class="member-card__avatar"><i class="fas fa-star"></i></div>
-          <div class="member-card__role">Liderança</div>
-          <h4>Membro Honorário</h4>
-          <p>Liderança Civil, São Paulo</p>
+
+        <div class="member-card slide-up" data-name="Juliana Fonseca Braga" data-area="legislativo municipal">
+          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <h3 class="member-name">Juliana Fonseca Braga</h3>
+          <p class="member-role">Vereadora - Guarulhos</p>
+          <p class="member-area">Legislativo Municipal</p>
         </div>
-        <div class="member-card" data-role="lideranca">
-          <div class="member-card__avatar"><i class="fas fa-users"></i></div>
-          <div class="member-card__role">Liderança</div>
-          <h4>Membro Associado</h4>
-          <p>Entidade de Classe, São Paulo</p>
+
+        <div class="member-card slide-up" data-delay="50" data-name="Rodrigo Machado Pires" data-area="legislativo federal">
+          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <h3 class="member-name">Rodrigo Machado Pires</h3>
+          <p class="member-role">Deputado Federal</p>
+          <p class="member-area">Legislativo Federal</p>
         </div>
-        <div class="member-card" data-role="lideranca">
-          <div class="member-card__avatar"><i class="fas fa-graduation-cap"></i></div>
-          <div class="member-card__role">Liderança</div>
-          <h4>Membro Correspondente</h4>
-          <p>Academia e Pesquisa, São Paulo</p>
+
+        <div class="member-card slide-up" data-delay="100" data-name="Luciane Tavares Monteiro" data-area="legislativo estadual">
+          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <h3 class="member-name">Luciane Tavares Monteiro</h3>
+          <p class="member-role">Deputada Estadual</p>
+          <p class="member-area">Legislativo Estadual</p>
         </div>
-        <div class="member-card" data-role="lideranca">
-          <div class="member-card__avatar"><i class="fas fa-building"></i></div>
-          <div class="member-card__role">Mantenedora</div>
-          <h4>Aslam Innovations</h4>
-          <p>Empresa Mantenedora da OPESP</p>
+
+        <div class="member-card slide-up" data-delay="150" data-name="Eduardo Santana Filho" data-area="legislativo municipal">
+          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <h3 class="member-name">Eduardo Santana Filho</h3>
+          <p class="member-role">Vereador - São Bernardo do Campo</p>
+          <p class="member-area">Legislativo Municipal</p>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-banner fade-in">
-    <div class="container">
-      <div class="cta-banner__inner">
-        <h2>Quer fazer parte da OPESP?</h2>
-        <p>Junte-se a lideranças parlamentares, empresariais e institucionais em uma das entidades mais tradicionais de São Paulo.</p>
-        <div class="cta-banner__actions">
-          <a href="seja-membro.html" class="btn btn--gold"><i class="fas fa-user-plus"></i> Quero ser Membro</a>
-          <a href="contato.html" class="btn btn--outline"><i class="fas fa-envelope"></i> Saiba Mais</a>
-        </div>
+  <section class="cta-section" aria-labelledby="cta-membros">
+    <div class="container" style="position: relative; z-index: 1;">
+      <h2 class="section-title" id="cta-membros">Integre o círculo que transforma São Paulo</h2>
+      <p class="section-subtitle light text-center" style="margin: 0 auto 40px;">
+        A filiação à OPESP é uma distinção concedida a quem demonstra mérito e comprometimento com os valores da instituição. Saiba como candidatar-se.
+      </p>
+      <div class="cta-actions">
+        <a href="seja-membro.html" class="btn btn-gold btn-lg">Solicitar Filiação</a>
+        <a href="contato.html" class="btn btn-outline-white btn-lg">Entrar em Contato</a>
       </div>
     </div>
   </section>
 
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <div class="footer__logo">OPESP<span>.</span></div>
-        <p class="footer__desc">Ordem dos Parlamentares do Estado de São Paulo — Entidade civil de direito privado, fundada em 21 de maio de 1994.</p>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">OPESP</span>
+          <span class="footer-logo-sub">Ordem dos Parlamentares do Estado de São Paulo</span>
+          <p class="footer-desc">Desde 1994, reunindo parlamentares e lideranças paulistas em torno do reconhecimento, da colaboração e do desenvolvimento do Estado de São Paulo.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Navegação</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="historia.html">Nossa História</a>
+            <a href="premio.html">Prêmio Top Business</a>
+            <a href="eventos.html">Grandes Eventos</a>
+            <a href="consultoria.html">Consultoria</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Institucional</p>
+          <div class="footer-links">
+            <a href="membros.html">Membros</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="videos.html">Vídeos</a>
+            <a href="parcerias.html">Parcerias</a>
+            <a href="seja-membro.html">Seja Membro</a>
+            <a href="contato.html">Contato</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Contato</p>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>contato@opesp.org.br</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp disponível</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>São Paulo, SP</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Navegação</h4>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="historia.html">Nossa História</a></li>
-          <li><a href="premio.html">Prêmio Top Business</a></li>
-          <li><a href="consultoria.html">Consultoria</a></li>
-          <li><a href="eventos.html">Eventos</a></li>
-          <li><a href="membros.html">Membros</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Mais</h4>
-        <ul>
-          <li><a href="noticias.html">Notícias</a></li>
-          <li><a href="videos.html">Vídeos</a></li>
-          <li><a href="parcerias.html">Parcerias</a></li>
-          <li><a href="seja-membro.html">Seja Membro</a></li>
-          <li><a href="contato.html">Fale Conosco</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Informações Legais</h4>
-        <ul class="footer__legal">
-          <li><i class="fas fa-file-alt"></i> Registro nº 282.360/94</li>
-          <li><i class="fas fa-balance-scale"></i> Lei Federal nº 10.406/2002</li>
-          <li><i class="fas fa-building"></i> Mantenedora: Aslam Innovations</li>
-          <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP — Brasil</li>
-        </ul>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copyright">&copy; 2025 OPESP. Presidenta: Gabriela Aguiar. Desenvolvido por <a href="#">Aslam Innovations</a>.</p>
+          <div class="footer-legal">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <p>&copy; 2026 OPESP — Ordem dos Parlamentares do Estado de São Paulo. Todos os direitos reservados.</p>
-    </div>
-  </div>
-  <button class="back-to-top" aria-label="Voltar ao topo" id="backToTop"><i class="fas fa-chevron-up"></i></button>
-</footer>
+  </footer>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
