@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fale Conosco — OPESP. Entre em contato com a Ordem dos Parlamentares do Estado de São Paulo. Estamos à disposição para atender sua mensagem.">
-  <title>Fale Conosco — OPESP</title>
+  <meta name="description" content="OPESP — Contato. Entre em contato com a Ordem dos Parlamentares do Estado de São Paulo.">
+  <title>Contato — OPESP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-page="contato">
 
 <div class="preloader" id="preloader"><div class="preloader__spinner"></div></div>
 
@@ -64,123 +64,84 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="index.html">Início</a>
           <i class="fas fa-chevron-right"></i>
-          <span>Fale Conosco</span>
+          <span>Contato</span>
         </nav>
       </div>
     </div>
   </div>
 
-  <!-- Contato Principal -->
-  <section class="form-section fade-in">
+  <section style="background:var(--bg-primary);padding:80px 0;" class="fade-in">
     <div class="container">
       <div class="contact-grid">
+        <!-- Informações -->
+        <div>
+          <h2 class="section-title">Informações de Contato</h2>
+          <div class="gold-line"></div>
+          <p style="color:var(--text-secondary);margin-bottom:2rem;">Entre em contato diretamente com a presidência da OPESP. Lembre-se: a OPESP não possui representantes ou intermediários — todo contato deve ser feito diretamente com a entidade.</p>
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-info__label">Localização</div>
+              <div class="contact-info__value">São Paulo, SP — Brasil</div>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-info__label">E-mail</div>
+              <div class="contact-info__value">contato@opesp.org.br</div>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i class="fas fa-building"></i></div>
+            <div>
+              <div class="contact-info__label">Registro</div>
+              <div class="contact-info__value">nº 282.360/94</div>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i class="fas fa-user-tie"></i></div>
+            <div>
+              <div class="contact-info__label">Presidenta</div>
+              <div class="contact-info__value">Gabriela Aguiar</div>
+            </div>
+          </div>
+          <div class="info-box" style="margin-top:1.5rem;">
+            <h4><i class="fas fa-exclamation-circle" style="color:var(--gold);margin-right:8px;"></i>Aviso Importante</h4>
+            <ul>
+              <li><i class="fas fa-shield-alt"></i> Contato direto com a presidência — sem intermediários</li>
+              <li><i class="fas fa-ban"></i> A OPESP não possui representantes externos</li>
+              <li><i class="fas fa-check-circle"></i> Desconfie de qualquer pessoa que se apresente como representante da OPESP</li>
+            </ul>
+          </div>
+        </div>
         <!-- Formulário -->
         <div>
           <h2 class="section-title">Envie sua Mensagem</h2>
           <div class="gold-line"></div>
-          <p style="color:var(--gray-600);margin-bottom:2rem;line-height:1.8;">Utilize o formulário abaixo para entrar em contato com a OPESP. Nossa equipe retornará seu contato no menor prazo possível. Para assuntos urgentes, utilize os canais diretos ao lado.</p>
-          <form id="contactForm" novalidate>
+          <form data-form="contato" novalidate>
             <div class="form-grid">
               <div class="form-group">
-                <label class="form-label" for="ctNome">Nome Completo *</label>
-                <input type="text" id="ctNome" class="form-control" placeholder="Seu nome completo" required>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
               </div>
               <div class="form-group">
-                <label class="form-label" for="ctEmail">E-mail *</label>
-                <input type="email" id="ctEmail" class="form-control" placeholder="seu@email.com" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="ctTelefone">Telefone / WhatsApp</label>
-                <input type="tel" id="ctTelefone" class="form-control" placeholder="(11) 99999-9999">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="ctAssunto">Assunto *</label>
-                <select id="ctAssunto" class="form-control" required>
-                  <option value="">Selecione o assunto</option>
-                  <option value="associacao">Associação / Seja Membro</option>
-                  <option value="premio">Prêmio Top Business</option>
-                  <option value="consultoria">Consultoria e Assessoria</option>
-                  <option value="parceria">Parcerias</option>
-                  <option value="eventos">Eventos</option>
-                  <option value="imprensa">Imprensa e Comunicação</option>
-                  <option value="outros">Outros Assuntos</option>
-                </select>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
               </div>
               <div class="form-group form-group--full">
-                <label class="form-label" for="ctMensagem">Mensagem *</label>
-                <textarea id="ctMensagem" class="form-control" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem">
               </div>
               <div class="form-group form-group--full">
-                <button type="submit" class="btn btn--gold" style="width:100%;justify-content:center;">
-                  <i class="fas fa-paper-plane"></i> Enviar Mensagem
-                </button>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
               </div>
+            </div>
+            <div class="form-submit" style="margin-top:1.5rem;">
+              <button type="submit" class="btn btn--gold"><i class="fas fa-paper-plane"></i> Enviar Mensagem</button>
             </div>
           </form>
-        </div>
-
-        <!-- Informações de Contato -->
-        <div>
-          <h2 class="section-title">Informações de Contato</h2>
-          <div class="gold-line"></div>
-          <p style="color:var(--gray-600);margin-bottom:2rem;line-height:1.8;">Entre em contato diretamente com a OPESP através dos canais abaixo. Lembre-se: a associação é feita exclusivamente pelo contato direto com a presidência da entidade.</p>
-          <div class="contact-info">
-            <div class="contact-info-card">
-              <div class="contact-info-card__icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div>
-                <h4>Localização</h4>
-                <p>São Paulo, SP — Brasil<br>Estado de São Paulo</p>
-              </div>
-            </div>
-            <div class="contact-info-card">
-              <div class="contact-info-card__icon"><i class="fas fa-envelope"></i></div>
-              <div>
-                <h4>E-mail</h4>
-                <p>contato@opesp.org.br<br>presidencia@opesp.org.br</p>
-              </div>
-            </div>
-            <div class="contact-info-card">
-              <div class="contact-info-card__icon"><i class="fas fa-phone-alt"></i></div>
-              <div>
-                <h4>Telefone</h4>
-                <p>Consulte nossos canais oficiais<br>nas redes sociais</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Redes Sociais -->
-          <div class="contact-social">
-            <h4>Redes Sociais</h4>
-            <div class="social-links">
-              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i> Facebook</a>
-              <a href="#" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
-              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-              <a href="#" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
-            </div>
-          </div>
-
-          <!-- Mapa Placeholder -->
-          <div class="map-placeholder" role="img" aria-label="Mapa de localização — São Paulo, SP">
-            <i class="fas fa-map-marked-alt"></i>
-            <p>São Paulo, Estado de São Paulo — Brasil</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Info Box Aviso -->
-  <section style="background:var(--off-white);padding:48px 0;" class="fade-in">
-    <div class="container">
-      <div style="max-width:760px;margin:0 auto;">
-        <div class="info-box">
-          <h4><i class="fas fa-exclamation-triangle" style="color:var(--gold);margin-right:8px;"></i>Aviso Importante</h4>
-          <ul>
-            <li><i class="fas fa-shield-alt"></i> A OPESP não possui representantes, credenciados ou franqueados em território nacional</li>
-            <li><i class="fas fa-shield-alt"></i> O processo de associação é realizado exclusivamente por contato direto com a presidência</li>
-            <li><i class="fas fa-shield-alt"></i> Desconfie de qualquer pessoa que se apresente como representante da OPESP</li>
-            <li><i class="fas fa-shield-alt"></i> Em caso de dúvidas, entre em contato pelos canais oficiais listados acima</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -193,7 +154,7 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <div class="footer__logo">OPESP<span>.</span></div>
-        <p class="footer__desc">Ordem dos Parlamentares do Estado de São Paulo — Entidade civil de direito privado, fundada em 21 de maio de 1994, que congrega parlamentares de todas as tendências partidárias.</p>
+        <p class="footer__desc">Ordem dos Parlamentares do Estado de São Paulo — Entidade civil de direito privado, fundada em 21 de maio de 1994.</p>
         <div class="footer__social">
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -233,7 +194,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© 2026 OPESP — Ordem dos Parlamentares do Estado de São Paulo. Todos os direitos reservados.</p>
+      <p>&copy; 2026 OPESP — Ordem dos Parlamentares do Estado de São Paulo. Todos os direitos reservados.</p>
     </div>
   </div>
   <button class="back-to-top" aria-label="Voltar ao topo" id="backToTop"><i class="fas fa-chevron-up"></i></button>
