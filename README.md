@@ -1,75 +1,120 @@
-# OPESP — Ordem dos Parlamentares do Estado de São Paulo
+# OPESP Website
 
-Site institucional completo, moderno e elegante para a **Ordem dos Parlamentares do Estado de São Paulo (OPESP)**.
+## Ordem dos Parlamentares do Estado de São Paulo
 
-## Sobre o Projeto
+Website institucional completo da OPESP — Ordem dos Parlamentares do Estado de São Paulo, entidade civil de direito privado fundada em 21 de maio de 1994.
 
-Site single-page corporativo com design sofisticado, transições suaves e animações impecáveis, desenvolvido inteiramente com **HTML5, CSS3 e JavaScript puro** (sem frameworks pesados).
+---
 
 ## Estrutura de Arquivos
 
 ```
-/
-├── index.html          — Site completo (single-page, 12 seções)
+opesp-website/
+├── index.html          # Página inicial com hero, stats, sobre, serviços, eventos, notícias
+├── historia.html       # Nossa história com linha do tempo e objetivos
+├── premio.html         # Prêmio Top Business — destaques, edições e depoimentos
+├── consultoria.html    # Consultoria e assessoria legislativa
+├── eventos.html        # Eventos realizados pela OPESP
+├── membros.html        # Quadro de membros com filtros e busca
+├── noticias.html       # Notícias e artigos institucionais
+├── videos.html         # Galeria de vídeos dos eventos
+├── parcerias.html      # Parceiros estratégicos da OPESP
+├── seja-membro.html    # Formulário de pré-cadastro para novos membros
+├── contato.html        # Formulário de contato e informações
 ├── css/
-│   └── styles.css      — Estilos completos (variáveis CSS, animações, responsividade)
+│   └── styles.css      # Estilos completos com animações e responsividade
 ├── js/
-│   └── main.js         — Interatividade, smooth scroll, contadores, animações
-└── README.md           — Este arquivo
+│   └── main.js         # JavaScript completo com todas as interações
+└── README.md           # Este arquivo
 ```
-
-## Seções do Site
-
-1. **Home (Hero)** — Hero impactante com parallax, partículas animadas, stats com contadores
-2. **Avisos Importantes** — 3 avisos institucionais em destaque (autonomia, sem representantes, associação direta)
-3. **Nossa História** — Timeline visual com marcos históricos + objetivos + liderança
-4. **Prêmio Top Business** — Galeria, destaques, depoimentos de premiados
-5. **Consultoria** — 4 cards de serviços com CTA
-6. **Eventos** — Grid com 6 eventos históricos (Grande Otelo, Pan, Tiradentes, etc.)
-7. **Membros** — Grid de 12 membros com busca e filtros
-8. **Notícias e Artigos** — Layout blog com notícias featured + sidebar
-9. **Vídeos** — Galeria com player modal
-10. **Parcerias** — Carrossel infinito de logos
-11. **Seja Membro** — Benefícios + formulário de pré-cadastro
-12. **Fale Conosco** — Formulário completo + informações de contato + redes sociais
-13. **Footer** — Links rápidos, informações legais, créditos Aslam Innovations
-
-## Recursos Técnicos
-
-- **Design**: Paleta institucional (dourado `#C9A84C`, azul marinho `#0D1B35`, branco, cinza)
-- **Tipografia**: Playfair Display (títulos) + Montserrat (corpo) via Google Fonts
-- **Ícones**: Font Awesome 6.5 via CDN
-- **Preloader**: Tela de carregamento elegante com barra de progresso animada
-- **Navegação**: Menu fixo com `glassmorphism`, destaque da seção ativa, hamburger para mobile
-- **Animações**: Scroll-based animations (AOS-like, nativo), parallax no hero, partículas flutuantes
-- **Contadores**: Animação numérica suave ao entrar no viewport
-- **Carrossel**: Scroll infinito automático dos parceiros (CSS puro + JS para duplicar itens)
-- **Formulários**: Validação simulada com feedback visual de sucesso
-- **Back-to-top**: Botão flutuante com animação suave
-- **Responsivo**: 100% adaptado para mobile (≤480px), tablet (≤1024px) e desktop
-
-## Informações Institucionais
-
-| Item | Informação |
-|------|------------|
-| Nome completo | Ordem dos Parlamentares do Estado de São Paulo (OPESP) |
-| Tipo | Entidade civil de direito privado |
-| Fundação | 21 de maio de 1994 |
-| Registro | Nº 282.360/94 |
-| Base legal | Lei Federal nº 10.406/2002, art. 44+ |
-| Presidente | Jornalista Gabriela Lima |
-| Mantenedora | Aslam Innovations |
-| Financiamento | Anuidades de associados + receitas de eventos (zero subvenção pública) |
-| Vínculo político | Nenhum — totalmente independente |
-| Principal prêmio | Prêmio Top Business (10+ anos) |
-
-## Como Usar
-
-1. Clone o repositório
-2. Abra `index.html` diretamente no navegador (não requer servidor)
-3. Ou sirva com qualquer servidor HTTP estático
 
 ---
 
-**Mantenedora:** Aslam Innovations  
-**© 2025 OPESP — Ordem dos Parlamentares do Estado de São Paulo**
+## Como Executar
+
+Basta abrir o arquivo `index.html` em qualquer navegador moderno. Não é necessário servidor ou instalação.
+
+```bash
+# No terminal (Linux/macOS):
+open index.html
+
+# Ou simplesmente arraste o arquivo para o navegador
+```
+
+Para melhor experiência de desenvolvimento, use uma extensão como **Live Server** no VS Code.
+
+---
+
+## Funcionalidades
+
+### JavaScript (js/main.js)
+- **Preloader** — Overlay animado com spinner, desaparece após carregamento
+- **Navegação** — Estado scrolled com blur, menu hamburger mobile com drawer
+- **Scroll suave** — Links internos com scroll suave
+- **Voltar ao topo** — Botão flutuante aparece após rolar 300px
+- **Contadores animados** — Números nas stats animam ao entrar no viewport
+- **Animações de scroll** — Elementos `.fade-in` animam ao entrar no viewport
+- **Filtro de membros** — Botões filtram cards por categoria
+- **Busca de membros** — Campo de busca filtra cards pelo nome
+- **Toast de formulário** — Feedback visual após envio de formulários
+- **Carrossel de parceiros** — Scroll infinito automático (quando presente)
+- **Transição de páginas** — Fade out suave ao navegar entre páginas
+- **Parallax no hero** — Efeito parallax no background da home
+- **Partículas** — 20 partículas flutuantes geradas dinamicamente no hero
+- **Link ativo** — Destaque automático do link da página atual na navegação
+
+### CSS (css/styles.css)
+- **Design System** com variáveis CSS (cores, fontes, espaçamentos)
+- **Preloader** full-screen com spinner animado
+- **Navegação fixa** com backdrop-filter no scroll
+- **Skyline CSS** com 30 prédios de alturas variadas
+- **Partículas animadas** com keyframe `float`
+- **Timeline alternada** para página de história
+- **Cards** de serviços, membros, notícias, vídeos, parceiros
+- **Formulários** estilizados com estados de foco
+- **Toast notifications** animadas
+- **Back-to-top** flutuante
+- **Responsividade** completa (1200px, 1024px, 768px, 480px)
+
+---
+
+## Stack Tecnológica
+
+| Tecnologia | Uso |
+|---|---|
+| HTML5 | Estrutura semântica das 11 páginas |
+| CSS3 | Estilos, animações, grid, flexbox, variáveis |
+| JavaScript (ES6+) | Interatividade, IntersectionObserver, DOM |
+| Google Fonts | Playfair Display + Montserrat |
+| Font Awesome 6 | Ícones em todo o site |
+
+---
+
+## Paleta de Cores
+
+| Nome | Hex |
+|---|---|
+| Dourado | `#C9A84C` |
+| Dourado claro | `#E2C26E` |
+| Dourado escuro | `#A07C30` |
+| Navy | `#0D1B35` |
+| Navy médio | `#1A2E55` |
+| Navy claro | `#243A6A` |
+| Branco | `#FFFFFF` |
+| Off-white | `#F8F6F0` |
+
+---
+
+## Informações Institucionais
+
+- **Entidade:** OPESP — Ordem dos Parlamentares do Estado de São Paulo
+- **Fundação:** 21 de maio de 1994
+- **Registro:** nº 282.360/94
+- **Base Legal:** Lei Federal nº 10.406/2002 (Código Civil Brasileiro)
+- **Presidenta:** Gabriela Lima
+- **Mantenedora:** Aslam Innovations
+- **Localização:** São Paulo, SP — Brasil
+
+---
+
+© 2026 OPESP — Todos os direitos reservados.
