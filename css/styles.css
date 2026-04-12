@@ -724,36 +724,57 @@ h1, h2, h3, h4, h5, h6 {
 .timeline-section {
   padding: 96px 0;
   background: var(--bg-light);
-  overflow: hidden;
 }
 
 .timeline-wrapper {
-  position: relative;
+  overflow-x: auto;
   padding: 60px 0 20px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) var(--bg-light);
+}
+
+.timeline-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.timeline-wrapper::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+.timeline-wrapper::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 3px;
 }
 
 .timeline-track {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--border-dark);
-  z-index: 0;
+  display: none;
 }
 
 .timeline-track-fill {
-  height: 100%;
-  background: linear-gradient(to right, var(--gold), var(--gold-dark));
-  width: 100%;
+  display: none;
 }
 
 .timeline-items {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: row;
+  min-width: max-content;
   gap: 0;
   position: relative;
   z-index: 1;
+  padding: 0 2rem;
+}
+
+.timeline-items::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--gold), var(--gold-dark));
+  transform: translateY(-50%);
+  z-index: 0;
 }
 
 .timeline-item {
@@ -761,6 +782,9 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   padding: 0 16px;
+  min-width: 280px;
+  min-height: 420px;
+  justify-content: center;
 }
 
 .timeline-dot-wrapper {
@@ -770,7 +794,8 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   width: 52px;
   height: 52px;
-  margin-bottom: 24px;
+  margin: 1rem 0;
+  flex-shrink: 0;
 }
 
 .timeline-dot {
@@ -2055,12 +2080,7 @@ textarea.form-control {
   }
 
   .timeline-items {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
-
-  .timeline-track {
-    display: none;
+    min-width: max-content;
   }
 }
 
@@ -2170,7 +2190,7 @@ textarea.form-control {
   }
 
   .timeline-items {
-    grid-template-columns: 1fr;
+    min-width: max-content;
   }
 
   .stats-grid {
