@@ -167,6 +167,7 @@ document.querySelectorAll('form[data-form]').forEach(form => {
 /* Page transitions */
 document.querySelectorAll('a:not([href^="#"]):not([href^="mailto"]):not([href^="tel"]):not([target])').forEach(a => {
   a.addEventListener('click', e => {
+    if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
     const href = a.getAttribute('href');
     if (!href || href.startsWith('http') || href.startsWith('//')) return;
     e.preventDefault();

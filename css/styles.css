@@ -431,8 +431,8 @@ main, nav, footer { position: relative; z-index: 1; }
   animation: bounce 2s ease infinite;
 }
 @keyframes bounce {
-  0%,100% { transform: translateX(-50%) translateY(0); }
-  50%      { transform: translateX(-50%) translateY(6px); }
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(6px); }
 }
 
 /* ============================================================
