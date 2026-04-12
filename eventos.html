@@ -1,393 +1,357 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="OPESP — Eventos. 36 grandes eventos realizados pela Ordem dos Parlamentares do Estado de São Paulo.">
-  <title>Eventos — OPESP</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grandes Eventos - OPESP</title>
+  <meta name="description" content="Mais de 350 eventos realizados ao longo de três décadas. Confira os grandes eventos da OPESP, do Top Business ao Encontro de Personalidades." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body data-page="eventos">
+<body>
 
-<div class="preloader" id="preloader"><div class="preloader__spinner"></div></div>
-
-<nav class="nav" id="nav">
-  <div class="container">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <span class="nav__logo-main">OPESP<span class="nav__logo-dot">.</span></span>
-        <span class="nav__logo-sub">Ordem dos Parlamentares SP</span>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="OPESP - Página inicial">
+        <div class="navbar-logo-badge">
+          <span class="navbar-logo-text">OPESP</span>
+          <span class="navbar-logo-sub">Estado de São Paulo</span>
+        </div>
       </a>
-      <ul class="nav__menu">
-        <li><a href="index.html" class="nav__link" data-page="index">Início</a></li>
-        <li><a href="historia.html" class="nav__link" data-page="historia">História</a></li>
-        <li><a href="premio.html" class="nav__link" data-page="premio">Prêmio Top Business</a></li>
-        <li><a href="consultoria.html" class="nav__link" data-page="consultoria">Consultoria</a></li>
-        <li><a href="eventos.html" class="nav__link" data-page="eventos">Eventos</a></li>
-        <li><a href="membros.html" class="nav__link" data-page="membros">Membros</a></li>
-        <li><a href="noticias.html" class="nav__link" data-page="noticias">Notícias</a></li>
-        <li><a href="videos.html" class="nav__link" data-page="videos">Vídeos</a></li>
-        <li><a href="parcerias.html" class="nav__link" data-page="parcerias">Parcerias</a></li>
-        <li><a href="contato.html" class="nav__link" data-page="contato">Contato</a></li>
-      </ul>
-      <a href="seja-membro.html" class="nav__cta">Seja Membro</a>
-      <button class="nav__hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-  <div class="nav__drawer">
-    <button class="nav__drawer-close" aria-label="Fechar menu"><i class="fas fa-times"></i></button>
-    <a href="index.html" class="nav__drawer-link">Início</a>
-    <a href="historia.html" class="nav__drawer-link">Nossa História</a>
-    <a href="premio.html" class="nav__drawer-link">Prêmio Top Business</a>
-    <a href="consultoria.html" class="nav__drawer-link">Consultoria</a>
-    <a href="eventos.html" class="nav__drawer-link">Eventos</a>
-    <a href="membros.html" class="nav__drawer-link">Membros</a>
-    <a href="noticias.html" class="nav__drawer-link">Notícias</a>
-    <a href="videos.html" class="nav__drawer-link">Vídeos</a>
-    <a href="parcerias.html" class="nav__drawer-link">Parcerias</a>
-    <a href="seja-membro.html" class="nav__drawer-link">Seja Membro</a>
-    <a href="contato.html" class="nav__drawer-link">Fale Conosco</a>
-  </div>
-  <div class="nav__overlay"></div>
-</nav>
-
-<main class="page-enter">
-
-  <div class="page-hero">
-    <div class="container">
-      <div class="page-hero__content">
-        <h1 class="page-hero__title">Eventos <span>Realizados</span></h1>
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Início</a>
-          <i class="fas fa-chevron-right"></i>
-          <span>Eventos</span>
-        </nav>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="historia.html">Nossa História</a>
+        <a href="premio.html">Top Business</a>
+        <a href="consultoria.html">Consultoria</a>
+        <a href="eventos.html" class="active">Grandes Eventos</a>
+        <a href="membros.html">Membros</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="parcerias.html">Parcerias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="seja-membro.html" class="btn btn-gold btn-sm">Seja Membro</a>
+        <button class="navbar-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="navbar-mobile" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="historia.html">Nossa História</a>
+    <a href="premio.html">Prêmio Top Business</a>
+    <a href="consultoria.html">Consultoria</a>
+    <a href="eventos.html" class="active">Grandes Eventos</a>
+    <a href="membros.html">Membros</a>
+    <a href="noticias.html">Notícias</a>
+    <a href="videos.html">Vídeos</a>
+    <a href="parcerias.html">Parcerias</a>
+    <a href="contato.html">Contato</a>
+    <a href="seja-membro.html" class="btn btn-gold">Seja Membro</a>
   </div>
 
-  <!-- 36 Eventos -->
-  <section style="background:var(--bg-primary);padding:80px 0;" class="fade-in">
+  <!-- PAGE BANNER -->
+  <section class="page-banner" aria-label="Grandes Eventos">
     <div class="container">
-      <h2 class="section-title" style="text-align:center;">36 Grandes Eventos</h2>
-      <div class="gold-line gold-line--center"></div>
-      <p class="section-subtitle" style="text-align:center;">Décadas de história, reconhecimento e excelência promovidos pela OPESP</p>
+      <span class="page-banner-label">Três décadas de história</span>
+      <h1 class="page-banner-title">Grandes Eventos</h1>
+      <p class="page-banner-sub">Mais de 350 eventos realizados ao longo de três décadas de atuação institucional no Estado de São Paulo.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span class="current">Grandes Eventos</span>
+      </nav>
+    </div>
+  </section>
 
-      <div class="events-full-grid">
+  <!-- EVENTOS GRID -->
+  <section class="section bg-white" aria-labelledby="eventos-lista-title">
+    <div class="container">
+      <div class="section-header center text-center" style="margin-bottom: 56px;">
+        <span class="section-label">Galeria de Eventos</span>
+        <h2 class="section-title" id="eventos-lista-title">Uma trajetória de reconhecimento e celebração</h2>
+        <div class="gold-divider center"></div>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Cada evento marcou um momento na história de São Paulo. Do Top Business ao Encontro de Personalidades, a OPESP esteve presente nos instantes que importam.
+        </p>
+      </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-trophy"></i></div>
-          <div class="event-card__date">Edição Mais Recente</div>
-          <h3>TOP BUSINESS OPESP</h3>
-          <p>A mais prestigiada edição do prêmio que reconhece a excelência empresarial e profissional do Estado de São Paulo.</p>
+      <div class="event-gallery-grid">
+
+        <div class="event-card-ph slide-up">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">TOP BUSINESS OPESP</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-award"></i></div>
-          <div class="event-card__date">Edição Recente</div>
-          <h3>Top Business OPESP</h3>
-          <p>Cerimônia de premiação destacando os profissionais e empresas que se sobressaíram no cenário paulista.</p>
+        <div class="event-card-ph slide-up" data-delay="50">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Top Business OPESP</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-star"></i></div>
-          <div class="event-card__date">Edição Especial</div>
-          <h3>Top Business OPESP</h3>
-          <p>Reconhecimento especial a personalidades e empresas que transformaram positivamente o setor empresarial.</p>
+        <div class="event-card-ph slide-up" data-delay="100">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Top Business OPESP</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-medal"></i></div>
-          <div class="event-card__date">Edição Memorável</div>
-          <h3>Top Business OPESP</h3>
-          <p>Premiação de destaque no calendário institucional da OPESP, celebrando a inovação e o impacto social.</p>
+        <div class="event-card-ph slide-up" data-delay="150">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Top Business OPESP</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-crown"></i></div>
-          <div class="event-card__date">Edição Histórica</div>
-          <h3>Top Business OPESP</h3>
-          <p>Uma das edições mais marcantes do prêmio, reunindo lideranças de diversas áreas do Estado de São Paulo.</p>
+        <div class="event-card-ph slide-up">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Top Business OPESP</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-users"></i></div>
-          <div class="event-card__date">São Paulo</div>
-          <h3>XXIII Encontro de Personalidades do Estado de SP e do Brasil</h3>
-          <p>Grande encontro reunindo personalidades de destaque do Estado de São Paulo e de todo o Brasil em um ambiente de alto nível.</p>
+        <div class="event-card-ph slide-up" data-delay="50">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">XXlll Encontro de Personalidades do Estado de SP e do Brasil</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-tv"></i></div>
-          <div class="event-card__date">Aniversário Especial</div>
-          <h3>70 Anos da Televisão Brasileira</h3>
-          <p>Celebração dos 70 anos da televisão brasileira, homenageando os pioneiros e ícones que construíram a mídia nacional.</p>
+        <div class="event-card-ph slide-up" data-delay="100">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">70 Anos da Televisão Brasileira</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-user-tie"></i></div>
-          <div class="event-card__date">São Paulo</div>
-          <h3>XXII Encontro de Personalidades</h3>
-          <p>Encontro de personalidades de destaque do Estado de São Paulo, promovendo integração e diálogo entre lideranças.</p>
+        <div class="event-card-ph slide-up" data-delay="150">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">XXll Encontro de Personalidades</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-sun"></i></div>
-          <div class="event-card__date">Energia Sustentável</div>
-          <h3>Encontro Brasileiro de Energia Solar Fotovoltaica</h3>
-          <p>Fórum sobre energia solar fotovoltaica, reunindo especialistas, empresas e autoridades para debater o futuro da energia sustentável no Brasil.</p>
+        <div class="event-card-ph slide-up">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Encontro Brasileiro de Energia Solar Fotovoltaica</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-trophy"></i></div>
-          <div class="event-card__date">2019</div>
-          <h3>Top Business OPESP 2019</h3>
-          <p>Edição 2019 do Prêmio Top Business, reconhecendo os destaques do ano no cenário empresarial e parlamentar paulista.</p>
+        <div class="event-card-ph slide-up" data-delay="50">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Top Business OPESP 2019</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-star"></i></div>
-          <div class="event-card__date">2018</div>
-          <h3>XXI Encontro de Personalidades de Destaque 2018</h3>
-          <p>Vigésima primeira edição do tradicional encontro de personalidades de destaque do Estado de São Paulo.</p>
+        <div class="event-card-ph slide-up" data-delay="100">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">XXI Encontro de Personalidades de Destaque 2018</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-glass-cheers"></i></div>
-          <div class="event-card__date">2018</div>
-          <h3>Jantar Personalidades de Ouro 2018</h3>
-          <p>Jantar de gala celebrando as personalidades de ouro do cenário paulista — empresários, parlamentares e lideranças sociais.</p>
+        <div class="event-card-ph slide-up" data-delay="150">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Jantar Personalidades de Ouro 2018</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-tv"></i></div>
-          <div class="event-card__date">2018</div>
-          <h3>68 Anos da Televisão Brasileira</h3>
-          <p>Homenagem aos 68 anos da televisão brasileira, celebrando pioneiros da mídia nacional e suas contribuições à cultura do Brasil.</p>
+        <div class="event-card-ph slide-up">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">68 Anos da Televisão Brasileira</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-award"></i></div>
-          <div class="event-card__date">2018</div>
-          <h3>Personalidade de Sucesso 2018</h3>
-          <p>Premiação que reconhece trajetórias de sucesso e impacto positivo no desenvolvimento econômico e social paulista.</p>
+        <div class="event-card-ph slide-up" data-delay="50">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Personalidade de Sucesso 2018</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-medal"></i></div>
-          <div class="event-card__date">Homenagem Histórica</div>
-          <h3>Medalha Tiradentes — O Alferes do Brasil</h3>
-          <p>Solenidade de entrega da Medalha Tiradentes, homenageando personalidades que prestaram relevantes serviços ao Estado de São Paulo.</p>
+        <div class="event-card-ph slide-up" data-delay="100">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Medalha Tiradentes - O Alferes do Brasil</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-city"></i></div>
-          <div class="event-card__date">Aniversário SP</div>
-          <h3>464º Aniversário da Cidade de São Paulo</h3>
-          <p>Celebração do aniversário de São Paulo com solenidade especial reunindo autoridades, parlamentares e personalidades da cidade.</p>
+        <div class="event-card-ph slide-up" data-delay="150">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">464º Aniversário da Cidade de São Paulo</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-users"></i></div>
-          <div class="event-card__date">São Paulo</div>
-          <h3>XX Encontro de Personalidades de Destaque do Estado de São Paulo</h3>
-          <p>Vigésima edição do encontro que reúne as maiores personalidades do cenário político, empresarial e cultural paulista.</p>
+        <div class="event-card-ph slide-up">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">XX Encontro de Personalidades de Destaque do Estado de São Paulo</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-film"></i></div>
-          <div class="event-card__date">Cultura</div>
-          <h3>1977 — O Ano que Não Acabou</h3>
-          <p>Evento cultural celebrando o legado de 1977, um ano marcante para a cultura, a política e a sociedade brasileira.</p>
+        <div class="event-card-ph slide-up" data-delay="50">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">1977 o Ano que Não Acabou</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-star"></i></div>
-          <div class="event-card__date">2017</div>
-          <h3>Personalidade de Sucesso 2017</h3>
-          <p>Premiação anual que destaca as personalidades que mais se destacaram em suas áreas de atuação no Estado de São Paulo.</p>
+        <div class="event-card-ph slide-up" data-delay="100">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Personalidade de Sucesso 2017</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-music"></i></div>
-          <div class="event-card__date">Música Nacional</div>
-          <h3>Prêmio Talento Nacional de Música</h3>
-          <p>Reconhecimento a talentos musicais brasileiros, celebrando a diversidade e a riqueza cultural da música nacional.</p>
+        <div class="event-card-ph slide-up" data-delay="150">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Prêmio Talento Nacional de Música</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-award"></i></div>
-          <div class="event-card__date">Outubro 2013</div>
-          <h3>Prêmio Grande Otelo</h3>
-          <p>Homenagem à trajetória artística e cultural do Estado de São Paulo, celebrando personalidades que marcaram a história da cultura brasileira.</p>
+        <div class="event-card-ph slide-up">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Prêmio Grande Otelo</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-female"></i></div>
-          <div class="event-card__date">8 de Março</div>
-          <h3>Dia Nacional da Mulher</h3>
-          <p>Solenidade especial em homenagem ao Dia Nacional da Mulher, celebrando mulheres que se destacam em diversas áreas da sociedade.</p>
+        <div class="event-card-ph slide-up" data-delay="50">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Dia Nacional da Mulher</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-running"></i></div>
-          <div class="event-card__date">2011</div>
-          <h3>Homenagem aos Medalhistas do Pan de Guadalajara</h3>
-          <p>Solenidade especial em homenagem aos atletas brasileiros medalhistas nos Jogos Pan-Americanos de Guadalajara, México.</p>
+        <div class="event-card-ph slide-up" data-delay="100">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Homenagem aos Medalhistas do Pan de Guadalajara</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-crown"></i></div>
-          <div class="event-card__date">Homenagem Real</div>
-          <h3>Diploma e Medalha do Mérito Comemorativo Princesa Isabel</h3>
-          <p>Entrega de diplomas e medalhas em homenagem ao legado histórico da Princesa Isabel e sua contribuição para a liberdade no Brasil.</p>
+        <div class="event-card-ph slide-up" data-delay="150">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Diploma e Medalha do Mérito Comemorativo Princesa Isabel</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-user-tie"></i></div>
-          <div class="event-card__date">São Paulo</div>
-          <h3>Encontro de Personalidades de Destaque do Estado de São Paulo</h3>
-          <p>Tradicional encontro anual reunindo as maiores personalidades do cenário político, empresarial e cultural paulista.</p>
+        <div class="event-card-ph slide-up">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Encontro de Personalidades de Destaque do Estado de São Paulo</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-film"></i></div>
-          <div class="event-card__date">2013</div>
-          <h3>Semana Estadual Mazzaropi 2013</h3>
-          <p>Semana cultural em homenagem ao ícone do cinema e cultura popular paulista Amácio Mazzaropi, celebrando seu legado artístico.</p>
+        <div class="event-card-ph slide-up" data-delay="50">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Semana Estadual Mazzaropi 2013</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-music"></i></div>
-          <div class="event-card__date">Forró Nacional</div>
-          <h3>Troféu Luiz Gonzaga de Ouro</h3>
-          <p>Homenagem ao Rei do Baião, reconhecendo artistas e personalidades que preservam e difundem a cultura nordestina no Brasil.</p>
+        <div class="event-card-ph slide-up" data-delay="100">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Trófeu Luiz Gonzaga de Ouro</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-medal"></i></div>
-          <div class="event-card__date">Juventus SP</div>
-          <h3>Entrega de Láureas no Clube Juventus</h3>
-          <p>Cerimônia de entrega de láureas e condecorações a personalidades de destaque, realizada no histórico Clube Juventus em São Paulo.</p>
+        <div class="event-card-ph slide-up" data-delay="150">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Entrega de Láureas no Clube Juventus</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-city"></i></div>
-          <div class="event-card__date">462 Anos SP</div>
-          <h3>Almoço Comemorativo do Aniversário de São Paulo 462 Anos</h3>
-          <p>Almoço comemorativo em homenagem ao aniversário de São Paulo, reunindo autoridades e personalidades para celebrar a cidade.</p>
+        <div class="event-card-ph slide-up">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Almoço Comemorativo do Aniversário de São Paulo 462 anos</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-film"></i></div>
-          <div class="event-card__date">2016</div>
-          <h3>Semana Estadual Mazzaropi 2016</h3>
-          <p>Edição 2016 da Semana Estadual Mazzaropi, promovendo a cultura e o legado do grande ícone do cinema paulista.</p>
+        <div class="event-card-ph slide-up" data-delay="50">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Semana Estadual Mazzaropi 2016</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-globe-asia"></i></div>
-          <div class="event-card__date">Relações Internacionais</div>
-          <h3>Café de Negócios Brasil — China</h3>
-          <p>Encontro de negócios aproximando empresários e autoridades brasileiras e chinesas, fortalecendo laços comerciais bilaterais.</p>
+        <div class="event-card-ph slide-up" data-delay="100">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Café de Negócios Brasil - China</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-utensils"></i></div>
-          <div class="event-card__date">Relações Internacionais</div>
-          <h3>Almoço de Negócios Brasil — China — Mansão SP</h3>
-          <p>Almoço de alto nível na Mansão São Paulo, reunindo delegações empresariais do Brasil e da China para fortalecer parcerias estratégicas.</p>
+        <div class="event-card-ph slide-up" data-delay="150">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Almoço de Negócios Brasil - China - Mansão SP</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-globe"></i></div>
-          <div class="event-card__date">Fórum Internacional</div>
-          <h3>Fórum Internacional de Negócios Brasil — China</h3>
-          <p>Fórum internacional de alto nível reunindo líderes empresariais, autoridades e especialistas do Brasil e da China para debater oportunidades de negócios.</p>
+        <div class="event-card-ph slide-up">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Fórum Internacional de Negócios Brasil China</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-city"></i></div>
-          <div class="event-card__date">2017</div>
-          <h3>Almoço Comemorativo Aniversário de São Paulo 2017</h3>
-          <p>Celebração do aniversário de São Paulo em 2017, com almoço comemorativo reunindo lideranças e personalidades da cidade.</p>
+        <div class="event-card-ph slide-up" data-delay="50">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Almoço Comemorativo Aniversário de São Paulo 2017</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-film"></i></div>
-          <div class="event-card__date">2017</div>
-          <h3>Semana Mazzaropi 2017</h3>
-          <p>Edição 2017 da Semana Mazzaropi, celebrando o legado cultural do ícone do cinema e da cultura popular paulista.</p>
+        <div class="event-card-ph slide-up" data-delay="100">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Semana Mazzaropi 2017</h3></div>
         </div>
 
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-star"></i></div>
-          <div class="event-card__date">2017</div>
-          <h3>Noite das Personalidades 2017</h3>
-          <p>Grande solenidade reunindo as personalidades mais marcantes do cenário paulista em uma noite de reconhecimento e celebração.</p>
+        <div class="event-card-ph slide-up" data-delay="150">
+          <div class="event-card-ph-img"><i class="fa-solid fa-camera"></i><span>Foto do Evento</span></div>
+          <div class="event-card-ph-body"><h3 class="event-card-ph-title">Noite das Personalidades 2017</h3></div>
         </div>
 
       </div>
     </div>
   </section>
 
-</main>
+  <!-- CTA -->
+  <section class="cta-section" aria-labelledby="cta-eventos">
+    <div class="container" style="position: relative; z-index: 1;">
+      <h2 class="section-title" id="cta-eventos">Faça parte de um próximo grande evento</h2>
+      <p class="section-subtitle light text-center" style="margin: 0 auto 40px;">
+        A OPESP segue criando momentos que ficam na memória de São Paulo. Entre em contato e saiba como participar.
+      </p>
+      <div class="cta-actions">
+        <a href="contato.html" class="btn btn-gold btn-lg">Entrar em Contato</a>
+        <a href="seja-membro.html" class="btn btn-outline-white btn-lg">Seja Membro</a>
+      </div>
+    </div>
+  </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <div class="footer__logo">OPESP<span>.</span></div>
-        <p class="footer__desc">Ordem dos Parlamentares do Estado de São Paulo — Entidade civil de direito privado, fundada em 21 de maio de 1994, que congrega parlamentares de todas as tendências partidárias.</p>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">OPESP</span>
+          <span class="footer-logo-sub">Ordem dos Parlamentares do Estado de São Paulo</span>
+          <p class="footer-desc">Desde 1994, reunindo parlamentares e lideranças paulistas em torno do reconhecimento, da colaboração e do desenvolvimento do Estado de São Paulo.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Navegação</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="historia.html">Nossa História</a>
+            <a href="premio.html">Prêmio Top Business</a>
+            <a href="eventos.html">Grandes Eventos</a>
+            <a href="consultoria.html">Consultoria</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Institucional</p>
+          <div class="footer-links">
+            <a href="membros.html">Membros</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="videos.html">Vídeos</a>
+            <a href="parcerias.html">Parcerias</a>
+            <a href="seja-membro.html">Seja Membro</a>
+            <a href="contato.html">Contato</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Contato</p>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>contato@opesp.org.br</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp disponível</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>São Paulo, SP</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Navegação</h4>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="historia.html">Nossa História</a></li>
-          <li><a href="premio.html">Prêmio Top Business</a></li>
-          <li><a href="consultoria.html">Consultoria</a></li>
-          <li><a href="eventos.html">Eventos</a></li>
-          <li><a href="membros.html">Membros</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Mais</h4>
-        <ul>
-          <li><a href="noticias.html">Notícias</a></li>
-          <li><a href="videos.html">Vídeos</a></li>
-          <li><a href="parcerias.html">Parcerias</a></li>
-          <li><a href="seja-membro.html">Seja Membro</a></li>
-          <li><a href="contato.html">Fale Conosco</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Informações Legais</h4>
-        <ul class="footer__legal">
-          <li><i class="fas fa-file-alt"></i> Registro nº 282.360/94</li>
-          <li><i class="fas fa-balance-scale"></i> Lei Federal nº 10.406/2002</li>
-          <li><i class="fas fa-building"></i> Mantenedora: Aslam Innovations</li>
-          <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP — Brasil</li>
-        </ul>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copyright">&copy; 2025 OPESP. Presidenta: Gabriela Aguiar. Desenvolvido por <a href="#">Aslam Innovations</a>.</p>
+          <div class="footer-legal">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <p>&copy; 2026 OPESP — Ordem dos Parlamentares do Estado de São Paulo. Todos os direitos reservados.</p>
-    </div>
-  </div>
-  <button class="back-to-top" aria-label="Voltar ao topo" id="backToTop"><i class="fas fa-chevron-up"></i></button>
-</footer>
+  </footer>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

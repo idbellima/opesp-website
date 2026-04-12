@@ -1,369 +1,384 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="OPESP — Ordem dos Parlamentares do Estado de São Paulo. Entidade civil de direito privado fundada em 21 de maio de 1994.">
-  <title>OPESP — Ordem dos Parlamentares do Estado de São Paulo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPESP - Ordem dos Parlamentares do Estado de São Paulo</title>
+  <meta name="description" content="A OPESP reune parlamentares e lideranças do Estado de São Paulo desde 1994. Três décadas de atuação institucional, reconhecimento e influência." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body data-page="index">
+<body>
 
-<div class="preloader" id="preloader"><div class="preloader__spinner"></div></div>
-
-<nav class="nav" id="nav">
-  <div class="container">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <span class="nav__logo-main">OPESP<span class="nav__logo-dot">.</span></span>
-        <span class="nav__logo-sub">Ordem dos Parlamentares SP</span>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="OPESP - Página inicial">
+        <div class="navbar-logo-badge">
+          <span class="navbar-logo-text">OPESP</span>
+          <span class="navbar-logo-sub">Estado de São Paulo</span>
+        </div>
       </a>
-      <ul class="nav__menu">
-        <li><a href="index.html" class="nav__link" data-page="index">Início</a></li>
-        <li><a href="historia.html" class="nav__link" data-page="historia">História</a></li>
-        <li><a href="premio.html" class="nav__link" data-page="premio">Prêmio Top Business</a></li>
-        <li><a href="consultoria.html" class="nav__link" data-page="consultoria">Consultoria</a></li>
-        <li><a href="eventos.html" class="nav__link" data-page="eventos">Eventos</a></li>
-        <li><a href="membros.html" class="nav__link" data-page="membros">Membros</a></li>
-        <li><a href="noticias.html" class="nav__link" data-page="noticias">Notícias</a></li>
-        <li><a href="videos.html" class="nav__link" data-page="videos">Vídeos</a></li>
-        <li><a href="parcerias.html" class="nav__link" data-page="parcerias">Parcerias</a></li>
-        <li><a href="contato.html" class="nav__link" data-page="contato">Contato</a></li>
-      </ul>
-      <a href="seja-membro.html" class="nav__cta">Seja Membro</a>
-      <button class="nav__hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-  <div class="nav__drawer">
-    <button class="nav__drawer-close" aria-label="Fechar menu"><i class="fas fa-times"></i></button>
-    <a href="index.html" class="nav__drawer-link">Início</a>
-    <a href="historia.html" class="nav__drawer-link">Nossa História</a>
-    <a href="premio.html" class="nav__drawer-link">Prêmio Top Business</a>
-    <a href="consultoria.html" class="nav__drawer-link">Consultoria</a>
-    <a href="eventos.html" class="nav__drawer-link">Eventos</a>
-    <a href="membros.html" class="nav__drawer-link">Membros</a>
-    <a href="noticias.html" class="nav__drawer-link">Notícias</a>
-    <a href="videos.html" class="nav__drawer-link">Vídeos</a>
-    <a href="parcerias.html" class="nav__drawer-link">Parcerias</a>
-    <a href="seja-membro.html" class="nav__drawer-link">Seja Membro</a>
-    <a href="contato.html" class="nav__drawer-link">Fale Conosco</a>
-  </div>
-  <div class="nav__overlay"></div>
-</nav>
-
-<main class="page-enter">
-
-  <!-- Hero — Ponte Estaiada -->
-  <section class="hero--home">
-    <div class="container">
-      <div class="hero__content">
-        <div class="hero__badge">
-          <i class="fas fa-star"></i>
-          Fundada em 21 de Maio de 1994 &bull; São Paulo, SP
-        </div>
-        <h1 class="hero__title">OPESP</h1>
-        <span class="hero__subtitle-text">Ordem dos Parlamentares do Estado de São Paulo</span>
-        <p class="hero__desc">Entidade civil de direito privado que congrega parlamentares desde 1994, promovendo integração, democracia e excelência no Estado de São Paulo.</p>
-        <div class="hero__actions">
-          <a href="historia.html" class="btn btn--gold"><i class="fas fa-landmark"></i> Nossa História</a>
-          <a href="seja-membro.html" class="btn btn--outline"><i class="fas fa-user-plus"></i> Seja Membro</a>
-        </div>
+      <div class="navbar-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="historia.html">Nossa História</a>
+        <a href="premio.html">Top Business</a>
+        <a href="consultoria.html">Consultoria</a>
+        <a href="eventos.html">Grandes Eventos</a>
+        <a href="membros.html">Membros</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="parcerias.html">Parcerias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="seja-membro.html" class="btn btn-gold btn-sm">Seja Membro</a>
+        <button class="navbar-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
-    <div class="hero__scroll-indicator">
-      <span>Rolar</span>
-      <i class="fas fa-chevron-down"></i>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="navbar-mobile" id="mobile-nav" aria-label="Menu mobile">
+    <a href="index.html">Home</a>
+    <a href="historia.html">Nossa História</a>
+    <a href="premio.html">Prêmio Top Business</a>
+    <a href="consultoria.html">Consultoria</a>
+    <a href="eventos.html">Grandes Eventos</a>
+    <a href="membros.html">Membros</a>
+    <a href="noticias.html">Notícias</a>
+    <a href="videos.html">Vídeos</a>
+    <a href="parcerias.html">Parcerias</a>
+    <a href="contato.html">Contato</a>
+    <a href="seja-membro.html" class="btn btn-gold">Seja Membro</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Apresentação">
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1543059080-f9b1272213d1?w=1920&q=80');"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-eyebrow">OPESP - Ordem dos Parlamentares do Estado de São Paulo</span>
+      <h1 class="hero-title slide-up">Onde o reconhecimento encontra a influência</h1>
+      <p class="hero-description slide-up" data-delay="150">
+        Desde 1994, a OPESP reune parlamentares, lideranças empresariais e personalidades do Estado de São Paulo em torno de um propósito comum: reconhecer, conectar e transformar.
+      </p>
+      <div class="hero-actions slide-up" data-delay="300">
+        <a href="seja-membro.html" class="btn btn-gold btn-lg">Faça Parte</a>
+        <a href="historia.html" class="btn btn-outline-white btn-lg">Nossa História</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
     </div>
   </section>
 
-  <!-- Stats Bar -->
-  <div class="stats-bar">
+  <!-- STATS BAR -->
+  <section class="stats-bar" aria-label="Números da OPESP">
     <div class="container">
-      <div class="stat-item">
-        <div class="stat-number" data-counter="31" data-suffix="+">0+</div>
-        <div class="stat-label">Anos de História</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number" data-counter="10" data-suffix="+">0+</div>
-        <div class="stat-label">Edições do Top Business</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number" data-counter="36" data-suffix="+">0+</div>
-        <div class="stat-label">Grandes Eventos</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number" data-counter="3" data-suffix="">0</div>
-        <div class="stat-label">Esferas Governamentais</div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-count="31" data-suffix="+">31+</span>
+          <span class="stat-label">Anos de Atuação</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="350" data-suffix="+">350+</span>
+          <span class="stat-label">Grandes Eventos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="10" data-suffix="+">10+</span>
+          <span class="stat-label">Edições Top Business</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="3" data-suffix="">3</span>
+          <span class="stat-label">Esferas de Governo</span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Quem Somos -->
-  <section class="about-section fade-in">
+  <!-- QUEM SOMOS -->
+  <section class="section bg-white" aria-labelledby="quem-somos-title">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <h2 class="section-title">Quem Somos</h2>
-          <div class="gold-line"></div>
-          <p>A <strong>Ordem dos Parlamentares do Estado de São Paulo — OPESP</strong> é uma entidade civil de direito privado, fundada em <strong>21 de maio de 1994</strong>, com o propósito de congregar parlamentares de todas as tendências partidárias em um espírito de integração e pluralidade democrática.</p>
-          <p>Registrada sob o nº <strong>282.360/94</strong> e amparada pelo Código Civil Brasileiro (Lei Federal nº 10.406/2002), a OPESP atua com plena personalidade jurídica em todo o território nacional, sem receber qualquer subvenção ou verba pública.</p>
-          <p>Com mais de três décadas de história, a OPESP é referência no relacionamento entre o setor público, o empresariado e a sociedade civil paulista.</p>
-          <a href="historia.html" class="btn btn--gold-outline" style="margin-top:8px;"><i class="fas fa-book-open"></i> Nossa História Completa</a>
+      <div class="section-header" style="max-width: 700px; margin-bottom: 60px;">
+        <span class="section-label">Quem Somos</span>
+        <h2 class="section-title" id="quem-somos-title">Uma ordem fundada na excelência e no compromisso público</h2>
+        <div class="gold-divider"></div>
+        <p class="section-subtitle">
+          A OPESP é uma ordem institucional que reune parlamentares eleitos nas três esferas de governo: municipal, estadual e federal. Nascida em São Paulo em 1994, a instituição atua como elo entre o poder público e a sociedade civil, promovendo reconhecimento, colaboração e desenvolvimento para o Estado.
+        </p>
+      </div>
+      <div class="grid-2">
+        <div class="profile-card slide-up">
+          <div class="profile-avatar">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <p class="profile-role">Presidenta</p>
+          <h3 class="profile-name">Gabriela Aguiar</h3>
+          <p class="profile-bio">
+            À frente da OPESP desde 2021, Gabriela Aguiar conduz a instituição com visão estratégica e compromisso com a valorização das lideranças paulistas. Sob sua presidência, a ordem ampliou sua presença e consolidou parcerias de alto nível.
+          </p>
         </div>
-        <div class="about-cards">
-          <div class="about-card">
-            <div class="about-card__icon"><i class="fas fa-user-tie"></i></div>
+        <div class="profile-card slide-up" data-delay="100">
+          <div class="profile-avatar" style="background: linear-gradient(135deg, #1A2E55, #243A6A);">
+            <i class="fa-solid fa-building"></i>
+          </div>
+          <p class="profile-role">Mantenedora</p>
+          <h3 class="profile-name">Aslam Innovations</h3>
+          <p class="profile-bio">
+            A Aslam Innovations apoia a continuidade e o crescimento da OPESP, garantindo que a instituição disponha de infraestrutura, tecnologia e suporte necessários para cumprir sua missão com excelência.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVISOS INSTITUCIONAIS -->
+  <section class="section bg-light" aria-labelledby="avisos-title">
+    <div class="container">
+      <div class="section-header center text-center" style="margin-bottom: 48px;">
+        <span class="section-label">Transparência Institucional</span>
+        <h2 class="section-title" id="avisos-title">Informações importantes ao público</h2>
+      </div>
+      <div class="grid-3">
+        <div class="notice-card slide-up">
+          <h3 class="notice-card-title">Autonomia Institucional</h3>
+          <p class="notice-card-text">
+            A OPESP é uma instituição independente. Suas decisões, programas e iniciativas são conduzidos com plena autonomia, sem vinculação a partidos políticos ou interesses particulares.
+          </p>
+        </div>
+        <div class="notice-card slide-up" data-delay="100">
+          <h3 class="notice-card-title">Sem Representantes Externos</h3>
+          <p class="notice-card-text">
+            A OPESP não possui representantes credenciados atuando em seu nome fora de seus canais oficiais. Desconfie de abordagens não autorizadas feitas em nome da instituição.
+          </p>
+        </div>
+        <div class="notice-card slide-up" data-delay="200">
+          <h3 class="notice-card-title">Contato Direto e Oficial</h3>
+          <p class="notice-card-text">
+            Toda comunicação oficial da OPESP ocorre por meio de seus canais verificados: e-mail institucional, redes sociais oficiais e telefone divulgado neste site.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICOS -->
+  <section class="section bg-white" aria-labelledby="servicos-title">
+    <div class="container">
+      <div class="section-header center text-center" style="margin-bottom: 60px;">
+        <span class="section-label">O que fazemos</span>
+        <h2 class="section-title" id="servicos-title">Serviços e atuação institucional</h2>
+        <div class="gold-divider center"></div>
+        <p class="section-subtitle">
+          Da articulação parlamentar ao reconhecimento de excelência, a OPESP atua em quatro frentes estratégicas para fortalecer lideranças e promover o desenvolvimento de São Paulo.
+        </p>
+      </div>
+      <div class="grid-4">
+        <div class="card slide-up">
+          <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3 class="card-title">Relacionamento Institucional</h3>
+          <p class="card-text">Construímos pontes entre o setor público e a iniciativa privada, criando redes de colaboração que geram resultados concretos para São Paulo.</p>
+        </div>
+        <div class="card slide-up" data-delay="100">
+          <div class="card-icon"><i class="fa-solid fa-landmark"></i></div>
+          <h3 class="card-title">Assessoria Parlamentar</h3>
+          <p class="card-text">Apoio especializado a parlamentares em todas as esferas de governo, com foco em estratégia legislativa, comunicação e articulação política.</p>
+        </div>
+        <div class="card slide-up" data-delay="200">
+          <div class="card-icon"><i class="fa-solid fa-chess-king"></i></div>
+          <h3 class="card-title">Estratégia de Influência</h3>
+          <p class="card-text">Orientação para lideranças que desejam ampliar sua presença institucional e consolidar sua reputação nos ambientes de poder em São Paulo.</p>
+        </div>
+        <div class="card slide-up" data-delay="300">
+          <div class="card-icon"><i class="fa-solid fa-award"></i></div>
+          <h3 class="card-title">Eventos e Reconhecimentos</h3>
+          <p class="card-text">Organizamos cerimônias, encontros e prêmios que celebram personalidades, empresas e iniciativas que transformam o estado de São Paulo.</p>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top: 48px;">
+        <a href="consultoria.html" class="btn btn-outline-navy">Ver todos os serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREMIO TOP BUSINESS -->
+  <section class="section bg-navy" aria-labelledby="premio-title">
+    <div class="container">
+      <div class="grid-2" style="align-items: center; gap: 80px;">
+        <div>
+          <span class="section-label">Reconhecimento de Excelência</span>
+          <h2 class="section-title light" id="premio-title">Prêmio Top Business OPESP</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle light" style="margin-bottom: 32px;">
+            O Prêmio Top Business é a mais alta honraria concedida pela OPESP. Em mais de dez edições, o prêmio reconheceu empresas, líderes e personalidades que se distinguiram pela excelência, pela inovação e pela contribuição ao desenvolvimento do Estado de São Paulo.
+          </p>
+          <p class="section-subtitle light" style="margin-bottom: 40px;">
+            Uma cerimônia de prestígio, frequentada por autoridades, empresários e formadores de opinião, que consolida o papel da OPESP como referência no reconhecimento de excelência em São Paulo.
+          </p>
+          <a href="premio.html" class="btn btn-gold">Conhecer o Prêmio</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="award-feature">
+            <div class="award-feature-icon"><i class="fa-solid fa-star"></i></div>
             <div>
-              <div class="about-card__title">Presidenta</div>
-              <div class="about-card__name">Gabriela Aguiar</div>
-              <div class="about-card__sub">Liderança da OPESP desde 2021</div>
+              <p class="award-feature-title">Tradição e Prestígio</p>
+              <p class="award-feature-text">Mais de uma década reconhecendo o que há de melhor em São Paulo em um formato de gala que celebra a excelência.</p>
             </div>
           </div>
-          <div class="about-card">
-            <div class="about-card__icon"><i class="fas fa-building"></i></div>
+          <div class="award-feature">
+            <div class="award-feature-icon"><i class="fa-solid fa-users"></i></div>
             <div>
-              <div class="about-card__title">Mantenedora</div>
-              <div class="about-card__name">Aslam Innovations</div>
-              <div class="about-card__sub">Empresa mantenedora</div>
+              <p class="award-feature-title">Público Qualificado</p>
+              <p class="award-feature-text">Parlamentares, executivos, empresários e líderes de referência reunidos em uma noite de reconhecimento e conexões de alto nível.</p>
             </div>
           </div>
-          <div class="info-box" style="margin-top:8px;">
-            <h4><i class="fas fa-info-circle" style="color:var(--gold);margin-right:8px;"></i>Informações Institucionais</h4>
-            <ul>
-              <li><i class="fas fa-check-circle"></i> Entidade sem fins lucrativos de direito privado</li>
-              <li><i class="fas fa-check-circle"></i> Sem subvenção ou verba pública de qualquer esfera</li>
-              <li><i class="fas fa-check-circle"></i> Independente de partidos e correntes políticas</li>
-              <li><i class="fas fa-check-circle"></i> Fundada em 21 de maio de 1994 em São Paulo</li>
-            </ul>
+          <div class="award-feature">
+            <div class="award-feature-icon"><i class="fa-solid fa-medal"></i></div>
+            <div>
+              <p class="award-feature-title">Diversas Categorias</p>
+              <p class="award-feature-text">O prêmio contempla múltiplas esferas: empresas, personalidades, projetos sociais e contribuições ao desenvolvimento paulista.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Avisos Importantes -->
-  <section class="notices-section fade-in">
+  <!-- EVENTOS PREVIEW -->
+  <section class="section bg-light" aria-labelledby="eventos-title">
     <div class="container">
-      <div class="notices-heading">
-        <i class="fas fa-exclamation-triangle"></i>
-        <h2 class="section-title" style="margin-bottom:0;">Avisos Importantes</h2>
+      <div class="section-header-flex">
+        <div>
+          <span class="section-label">Grandes Eventos</span>
+          <h2 class="section-title" id="eventos-title">Três décadas de história em São Paulo</h2>
+        </div>
+        <a href="eventos.html" class="btn btn-outline-navy">Ver todos os eventos</a>
       </div>
-      <p class="section-subtitle">Informações essenciais sobre a OPESP e sua atuação</p>
-      <div class="notices-grid">
-        <div class="notice-card">
-          <div class="notice-card__icon"><i class="fas fa-exclamation-triangle"></i></div>
-          <h4>Autonomia e Independência</h4>
-          <p>A OPESP não tem qualquer relação com a Ordem dos Parlamentares do Brasil (OPB). São entidades totalmente distintas e independentes entre si.</p>
-        </div>
-        <div class="notice-card">
-          <div class="notice-card__icon"><i class="fas fa-ban"></i></div>
-          <h4>Sem Representantes Externos</h4>
-          <p>A OPESP não possui representantes, credenciados, franqueados ou quaisquer prepostos em território nacional. Qualquer pessoa que se apresente como representante age por conta própria.</p>
-        </div>
-        <div class="notice-card">
-          <div class="notice-card__icon"><i class="fas fa-user-check"></i></div>
-          <h4>Associação Direta</h4>
-          <p>Para se associar à OPESP, o interessado deve contatar diretamente a presidência da entidade. Não há intermediários nem processos de captação por terceiros.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Nossos Serviços -->
-  <section class="services-section fade-in">
-    <div class="container">
-      <h2 class="section-title">Nossos Serviços</h2>
-      <div class="gold-line"></div>
-      <p class="section-subtitle">Assessoria especializada para navegar o ambiente político-legislativo</p>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-card__number">01</div>
-          <div class="service-card__icon"><i class="fas fa-search"></i></div>
-          <h3>Consultoria Técnica</h3>
-          <p>Análise especializada de projetos de lei e matérias legislativas para empresas e entidades que necessitam compreender o impacto normativo em suas atividades.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-card__number">02</div>
-          <div class="service-card__icon"><i class="fas fa-handshake"></i></div>
-          <h3>Relacionamento Governamental</h3>
-          <p>Facilitação do diálogo entre o setor privado e as diversas esferas do governo — municipal, estadual e federal — de forma ética e transparente.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-card__number">03</div>
-          <div class="service-card__icon"><i class="fas fa-briefcase"></i></div>
-          <h3>Assessoria em Relações Governamentais</h3>
-          <p>Suporte estratégico para navegação no complexo ambiente político-legislativo brasileiro, com foco em resultados concretos e sustentáveis.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-card__number">04</div>
-          <div class="service-card__icon"><i class="fas fa-file-alt"></i></div>
-          <h3>Elaboração de Projetos Legislativos</h3>
-          <p>Redação técnica e juridicamente embasada de proposições legislativas alinhadas às necessidades e objetivos estratégicos do cliente.</p>
-        </div>
-      </div>
-      <div class="services-cta">
-        <a href="consultoria.html"><i class="fas fa-arrow-right"></i> Ver todos os serviços</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Prêmio Top Business -->
-  <section class="top-business-section fade-in">
-    <div class="container">
-      <div class="top-business-inner">
-        <div class="trophy-icon"><i class="fas fa-trophy"></i></div>
-        <h2>Prêmio Top Business</h2>
-        <p class="subtitle">Mais de 10 anos reconhecendo a excelência</p>
-        <p>Por mais de uma década, a OPESP reconhece profissionais, empreendedores e empresas através do Prêmio Top Business — o mais alto reconhecimento do setor empresarial paulista. Organizado em parceria com a LSG Eventos, o prêmio celebra histórias de superação, inovação e impacto positivo na sociedade.</p>
-        <a href="premio.html" class="btn btn--gold"><i class="fas fa-trophy"></i> Conheça o Prêmio</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Eventos Realizados -->
-  <section class="events-section fade-in">
-    <div class="container">
-      <h2 class="section-title">Eventos Realizados</h2>
-      <div class="gold-line"></div>
-      <p class="section-subtitle">Momentos marcantes na trajetória da OPESP</p>
-      <div class="events-grid">
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-award"></i></div>
-          <div class="event-card__date">Outubro 2013</div>
-          <h3>Prêmio Grande Otelo</h3>
-          <p>Homenagem à trajetória artística e cultural do Estado de São Paulo, celebrando personalidades que marcaram a história da cultura brasileira.</p>
-        </div>
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-medal"></i></div>
-          <div class="event-card__date">2011</div>
-          <h3>Homenagem aos Medalhistas</h3>
-          <p>Pan de Guadalajara — Atletas brasileiros homenageados em solenidade especial organizada pela OPESP em reconhecimento ao esforço e dedicação.</p>
-        </div>
-        <div class="event-card">
-          <div class="event-card__icon"><i class="fas fa-users"></i></div>
-          <div class="event-card__date">São Paulo</div>
-          <h3>Encontro de Personalidades</h3>
-          <p>Lideranças empresariais e políticas reunidas em encontro promovido pela OPESP para fortalecer o diálogo e as parcerias estratégicas.</p>
-        </div>
-      </div>
-      <div class="events-cta">
-        <a href="eventos.html"><i class="fas fa-calendar-alt"></i> Ver todos os 36 eventos</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Últimas Notícias -->
-  <section class="news-section fade-in">
-    <div class="container">
-      <h2 class="section-title">Últimas Notícias</h2>
-      <div class="gold-line"></div>
-      <p class="section-subtitle">Acompanhe as novidades e acontecimentos da OPESP</p>
-      <div class="news-grid">
-        <div class="news-card">
-          <div class="news-card__img"><i class="fas fa-landmark"></i></div>
-          <div class="news-card__body">
-            <span class="news-card__badge">Institucional</span>
-            <h3>OPESP celebra 31 anos de história e excelência parlamentar</h3>
-            <div class="news-card__date"><i class="far fa-calendar"></i> Janeiro de 2026</div>
-            <p>A Ordem dos Parlamentares do Estado de São Paulo comemora mais um aniversário com uma trajetória marcada por conquistas e reconhecimentos.</p>
+      <div class="grid-3">
+        <div class="event-card-ph slide-up">
+          <div class="event-card-ph-img">
+            <i class="fa-solid fa-camera"></i>
+            <span>Foto do Evento</span>
+          </div>
+          <div class="event-card-ph-body">
+            <h3 class="event-card-ph-title">Top Business OPESP</h3>
           </div>
         </div>
-        <div class="news-card">
-          <div class="news-card__img"><i class="fas fa-trophy"></i></div>
-          <div class="news-card__body">
-            <span class="news-card__badge">Prêmio</span>
-            <h3>Prêmio Top Business anuncia nova edição para 2026</h3>
-            <div class="news-card__date"><i class="far fa-calendar"></i> Fevereiro de 2026</div>
-            <p>A edição 2026 do Prêmio Top Business está confirmada, trazendo novas categorias e homenageados que se destacaram no cenário empresarial paulista.</p>
+        <div class="event-card-ph slide-up" data-delay="100">
+          <div class="event-card-ph-img">
+            <i class="fa-solid fa-camera"></i>
+            <span>Foto do Evento</span>
+          </div>
+          <div class="event-card-ph-body">
+            <h3 class="event-card-ph-title">XXlll Encontro de Personalidades do Estado de SP e do Brasil</h3>
           </div>
         </div>
-        <div class="news-card">
-          <div class="news-card__img"><i class="fas fa-globe-americas"></i></div>
-          <div class="news-card__body">
-            <span class="news-card__badge">Eventos</span>
-            <h3>Fórum Brasil-China: OPESP como ponte entre os gigantes</h3>
-            <div class="news-card__date"><i class="far fa-calendar"></i> Março de 2026</div>
-            <p>A OPESP participou ativamente do Fórum Brasil-China, reforçando seu papel como facilitadora de diálogos internacionais de alto nível.</p>
+        <div class="event-card-ph slide-up" data-delay="200">
+          <div class="event-card-ph-img">
+            <i class="fa-solid fa-camera"></i>
+            <span>Foto do Evento</span>
+          </div>
+          <div class="event-card-ph-body">
+            <h3 class="event-card-ph-title">Noite das Personalidades 2017</h3>
           </div>
         </div>
       </div>
-      <div class="news-cta">
-        <a href="noticias.html"><i class="fas fa-newspaper"></i> Ver todas as notícias</a>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="container" style="position: relative; z-index: 1;">
+      <span class="section-label" style="display: block; text-align: center; margin-bottom: 16px;">Faça Parte</span>
+      <h2 class="section-title" id="cta-title">Faça parte do círculo que transforma São Paulo</h2>
+      <p class="section-subtitle light text-center" style="margin: 0 auto 40px;">
+        A OPESP reune lideranças que fazem a diferença. Se você acredita no poder da articulação institucional e no reconhecimento da excelência, este é o seu lugar.
+      </p>
+      <div class="cta-actions">
+        <a href="seja-membro.html" class="btn btn-gold btn-lg">Solicitar Filiação</a>
+        <a href="contato.html" class="btn btn-outline-white btn-lg">Falar Conosco</a>
       </div>
     </div>
   </section>
 
-  <!-- CTA Banner -->
-  <section class="cta-banner fade-in">
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Rodapé">
     <div class="container">
-      <div class="cta-banner__inner">
-        <h2>Faça parte da maior associação de parlamentares do Estado de São Paulo</h2>
-        <p>Junte-se a lideranças parlamentares, empresariais e institucionais que constroem um São Paulo mais forte, democrático e próspero.</p>
-        <div class="cta-banner__actions">
-          <a href="seja-membro.html" class="btn btn--gold"><i class="fas fa-user-plus"></i> Seja Membro</a>
-          <a href="contato.html" class="btn btn--outline"><i class="fas fa-envelope"></i> Fale Conosco</a>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">OPESP</span>
+          <span class="footer-logo-sub">Ordem dos Parlamentares do Estado de São Paulo</span>
+          <p class="footer-desc">
+            Desde 1994, reunindo parlamentares e lideranças paulistas em torno do reconhecimento, da colaboração e do desenvolvimento do Estado de São Paulo.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Navegação</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="historia.html">Nossa História</a>
+            <a href="premio.html">Prêmio Top Business</a>
+            <a href="eventos.html">Grandes Eventos</a>
+            <a href="consultoria.html">Consultoria</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Institucional</p>
+          <div class="footer-links">
+            <a href="membros.html">Membros</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="videos.html">Vídeos</a>
+            <a href="parcerias.html">Parcerias</a>
+            <a href="seja-membro.html">Seja Membro</a>
+            <a href="contato.html">Contato</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Contato</p>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>contato@opesp.org.br</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp disponível</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>São Paulo, SP</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <div class="footer__logo">OPESP<span>.</span></div>
-        <p class="footer__desc">Ordem dos Parlamentares do Estado de São Paulo — Entidade civil de direito privado, fundada em 21 de maio de 1994, que congrega parlamentares de todas as tendências partidárias.</p>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copyright">
+            &copy; 2025 OPESP. Presidenta: Gabriela Aguiar. Desenvolvido por <a href="#">Aslam Innovations</a>.
+          </p>
+          <div class="footer-legal">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+          </div>
         </div>
       </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Navegação</h4>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="historia.html">Nossa História</a></li>
-          <li><a href="premio.html">Prêmio Top Business</a></li>
-          <li><a href="consultoria.html">Consultoria</a></li>
-          <li><a href="eventos.html">Eventos</a></li>
-          <li><a href="membros.html">Membros</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Mais</h4>
-        <ul>
-          <li><a href="noticias.html">Notícias</a></li>
-          <li><a href="videos.html">Vídeos</a></li>
-          <li><a href="parcerias.html">Parcerias</a></li>
-          <li><a href="seja-membro.html">Seja Membro</a></li>
-          <li><a href="contato.html">Fale Conosco</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Informações Legais</h4>
-        <ul class="footer__legal">
-          <li><i class="fas fa-file-alt"></i> Registro nº 282.360/94</li>
-          <li><i class="fas fa-balance-scale"></i> Lei Federal nº 10.406/2002</li>
-          <li><i class="fas fa-building"></i> Mantenedora: Aslam Innovations</li>
-          <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP — Brasil</li>
-        </ul>
-      </div>
     </div>
-    <div class="footer__bottom">
-      <p>&copy; 2026 OPESP — Ordem dos Parlamentares do Estado de São Paulo. Todos os direitos reservados.</p>
-    </div>
-  </div>
-  <button class="back-to-top" aria-label="Voltar ao topo" id="backToTop"><i class="fas fa-chevron-up"></i></button>
-</footer>
+  </footer>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

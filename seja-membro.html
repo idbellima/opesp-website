@@ -1,221 +1,264 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="OPESP — Seja Membro. Junte-se à Ordem dos Parlamentares do Estado de São Paulo.">
-  <title>Seja Membro — OPESP</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seja Membro - OPESP</title>
+  <meta name="description" content="A OPESP não é para todos. É para quem transforma São Paulo. Saiba como solicitar sua filiação à Ordem dos Parlamentares do Estado de São Paulo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body data-page="seja-membro">
+<body>
 
-<div class="preloader" id="preloader"><div class="preloader__spinner"></div></div>
-
-<nav class="nav" id="nav">
-  <div class="container">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <span class="nav__logo-main">OPESP<span class="nav__logo-dot">.</span></span>
-        <span class="nav__logo-sub">Ordem dos Parlamentares SP</span>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="OPESP - Página inicial">
+        <div class="navbar-logo-badge">
+          <span class="navbar-logo-text">OPESP</span>
+          <span class="navbar-logo-sub">Estado de São Paulo</span>
+        </div>
       </a>
-      <ul class="nav__menu">
-        <li><a href="index.html" class="nav__link" data-page="index">Início</a></li>
-        <li><a href="historia.html" class="nav__link" data-page="historia">História</a></li>
-        <li><a href="premio.html" class="nav__link" data-page="premio">Prêmio Top Business</a></li>
-        <li><a href="consultoria.html" class="nav__link" data-page="consultoria">Consultoria</a></li>
-        <li><a href="eventos.html" class="nav__link" data-page="eventos">Eventos</a></li>
-        <li><a href="membros.html" class="nav__link" data-page="membros">Membros</a></li>
-        <li><a href="noticias.html" class="nav__link" data-page="noticias">Notícias</a></li>
-        <li><a href="videos.html" class="nav__link" data-page="videos">Vídeos</a></li>
-        <li><a href="parcerias.html" class="nav__link" data-page="parcerias">Parcerias</a></li>
-        <li><a href="contato.html" class="nav__link" data-page="contato">Contato</a></li>
-      </ul>
-      <a href="seja-membro.html" class="nav__cta">Seja Membro</a>
-      <button class="nav__hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-  <div class="nav__drawer">
-    <button class="nav__drawer-close" aria-label="Fechar menu"><i class="fas fa-times"></i></button>
-    <a href="index.html" class="nav__drawer-link">Início</a>
-    <a href="historia.html" class="nav__drawer-link">Nossa História</a>
-    <a href="premio.html" class="nav__drawer-link">Prêmio Top Business</a>
-    <a href="consultoria.html" class="nav__drawer-link">Consultoria</a>
-    <a href="eventos.html" class="nav__drawer-link">Eventos</a>
-    <a href="membros.html" class="nav__drawer-link">Membros</a>
-    <a href="noticias.html" class="nav__drawer-link">Notícias</a>
-    <a href="videos.html" class="nav__drawer-link">Vídeos</a>
-    <a href="parcerias.html" class="nav__drawer-link">Parcerias</a>
-    <a href="seja-membro.html" class="nav__drawer-link">Seja Membro</a>
-    <a href="contato.html" class="nav__drawer-link">Fale Conosco</a>
-  </div>
-  <div class="nav__overlay"></div>
-</nav>
-
-<main class="page-enter">
-
-  <div class="page-hero">
-    <div class="container">
-      <div class="page-hero__content">
-        <h1 class="page-hero__title">Seja <span>Membro</span></h1>
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="index.html">Início</a>
-          <i class="fas fa-chevron-right"></i>
-          <span>Seja Membro</span>
-        </nav>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="historia.html">Nossa História</a>
+        <a href="premio.html">Top Business</a>
+        <a href="consultoria.html">Consultoria</a>
+        <a href="eventos.html">Grandes Eventos</a>
+        <a href="membros.html">Membros</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="parcerias.html">Parcerias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="seja-membro.html" class="btn btn-gold btn-sm active">Seja Membro</a>
+        <button class="navbar-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="navbar-mobile" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="historia.html">Nossa História</a>
+    <a href="premio.html">Prêmio Top Business</a>
+    <a href="consultoria.html">Consultoria</a>
+    <a href="eventos.html">Grandes Eventos</a>
+    <a href="membros.html">Membros</a>
+    <a href="noticias.html">Notícias</a>
+    <a href="videos.html">Vídeos</a>
+    <a href="parcerias.html">Parcerias</a>
+    <a href="contato.html">Contato</a>
+    <a href="seja-membro.html" class="btn btn-gold active">Seja Membro</a>
   </div>
 
-  <!-- Benefícios -->
-  <section style="background:var(--bg-primary);padding:80px 0;" class="fade-in">
+  <!-- PAGE BANNER -->
+  <section class="page-banner" aria-label="Seja Membro">
     <div class="container">
-      <h2 class="section-title" style="text-align:center;">Benefícios da Associação</h2>
-      <div class="gold-line gold-line--center"></div>
-      <p class="section-subtitle" style="text-align:center;">Por que fazer parte da OPESP?</p>
-      <div class="benefits-grid">
-        <div class="benefit-card">
-          <i class="fas fa-network-wired"></i>
-          <h4>Networking Exclusivo</h4>
-          <p>Acesso a uma rede de parlamentares, empresários e lideranças das três esferas de governo.</p>
+      <span class="page-banner-label">Filiação Institucional</span>
+      <h1 class="page-banner-title">Seja Membro da OPESP</h1>
+      <p class="page-banner-sub">Não é para todos. É para quem transforma São Paulo.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span class="current">Seja Membro</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section bg-white" aria-labelledby="seja-membro-intro">
+    <div class="container">
+      <div class="grid-2" style="align-items: center; gap: 80px;">
+        <div>
+          <span class="section-label">O que significa fazer parte</span>
+          <h2 class="section-title" id="seja-membro-intro">Um círculo que não se abre para qualquer um</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle" style="margin-bottom: 24px;">
+            A OPESP é uma ordem. Isso significa que a filiação não é uma inscrição aberta, mas um reconhecimento concedido a quem demonstra mérito, compromisso e alinhamento com os valores que a instituição defende há mais de três décadas.
+          </p>
+          <p style="color: var(--text-body); line-height: 1.8; margin-bottom: 24px;">
+            Fazer parte da OPESP é pertencer a um grupo seleto de parlamentares e lideranças que constroem São Paulo com seriedade, visão e compromisso público. É ter acesso a uma rede de conexões de alto nível, a eventos de prestígio e ao suporte de uma instituição com credibilidade consolidada.
+          </p>
+          <p style="color: var(--text-body); line-height: 1.8;">
+            Se você acredita que faz parte desse círculo, preencha o formulário de pré-candidatura e aguarde o contato de nossa equipe.
+          </p>
         </div>
-        <div class="benefit-card">
-          <i class="fas fa-trophy"></i>
-          <h4>Indicação ao Top Business</h4>
-          <p>Possibilidade de indicação e participação no Prêmio Top Business, o maior reconhecimento empresarial paulista.</p>
-        </div>
-        <div class="benefit-card">
-          <i class="fas fa-calendar-check"></i>
-          <h4>Acesso a Eventos</h4>
-          <p>Convites prioritários e acesso especial aos eventos institucionais, encontros e solenidades da OPESP.</p>
-        </div>
-        <div class="benefit-card">
-          <i class="fas fa-certificate"></i>
-          <h4>Credencial Institucional</h4>
-          <p>Credencial de membro da OPESP, reconhecida em todo o Estado de São Paulo e nas esferas federais.</p>
-        </div>
-        <div class="benefit-card">
-          <i class="fas fa-bullhorn"></i>
-          <h4>Visibilidade</h4>
-          <p>Divulgação de sua empresa ou atividade nos canais e comunicações oficiais da OPESP.</p>
-        </div>
-        <div class="benefit-card">
-          <i class="fas fa-handshake"></i>
-          <h4>Apoio Institucional</h4>
-          <p>Suporte da entidade em iniciativas e projetos de interesse público ou empresarial.</p>
+        <div>
+          <p style="font-family: var(--font-serif); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold-dark); margin-bottom: 20px;">Benefícios da Filiação</p>
+          <div class="benefits-list">
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fa-solid fa-users"></i></div>
+              <div class="benefit-content">
+                <h4>Acesso a uma rede de lideranças</h4>
+                <p>Conexão direta com parlamentares, empresários e personalidades que integram a OPESP e suas esferas de influência.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fa-solid fa-calendar-star"></i></div>
+              <div class="benefit-content">
+                <h4>Participação em grandes eventos</h4>
+                <p>Convites preferenciais para os eventos, encontros e cerimônias de gala promovidos pela OPESP.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fa-solid fa-trophy"></i></div>
+              <div class="benefit-content">
+                <h4>Candidatura ao Prêmio Top Business</h4>
+                <p>Elegibilidade para concorrer ao mais prestigioso prêmio institucional concedido pela OPESP.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fa-solid fa-shield-check"></i></div>
+              <div class="benefit-content">
+                <h4>Reconhecimento institucional</h4>
+                <p>Uso do selo de membro da OPESP e o prestígio associado a uma das mais respeitadas ordens institucionais de São Paulo.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fa-solid fa-handshake"></i></div>
+              <div class="benefit-content">
+                <h4>Suporte de assessoria institucional</h4>
+                <p>Acesso aos serviços de consultoria e assessoria da OPESP em condições exclusivas para membros.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="benefit-content">
+                <h4>Visibilidade nas comunicações da OPESP</h4>
+                <p>Presença nos materiais, publicações e redes sociais da ordem, ampliando sua visibilidade junto ao público institucional.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fa-solid fa-bookmark"></i></div>
+              <div class="benefit-content">
+                <h4>Acervo e memória institucional</h4>
+                <p>Participação no legado histórico da OPESP, com registro de sua atuação na memória da instituição ao longo das décadas.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Formulário -->
-  <section class="form-section fade-in" style="background:var(--bg-secondary);padding:80px 0;">
+  <!-- FORMULARIO -->
+  <section class="section bg-light" aria-labelledby="form-title">
     <div class="container">
-      <div class="form-container">
-        <h2 class="section-title" style="text-align:center;">Solicitar Associação</h2>
-        <div class="gold-line gold-line--center"></div>
-        <p class="section-subtitle" style="text-align:center;">Preencha o formulário e nossa equipe entrará em contato</p>
-        <form data-form="membro" novalidate>
-          <div class="form-grid">
-            <div class="form-group">
-              <label for="nome">Nome Completo</label>
-              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-            </div>
-            <div class="form-group">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-            </div>
-            <div class="form-group">
-              <label for="telefone">Telefone</label>
-              <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
-            </div>
-            <div class="form-group">
-              <label for="cargo">Cargo / Função</label>
-              <input type="text" id="cargo" name="cargo" placeholder="Seu cargo ou função">
-            </div>
-            <div class="form-group">
-              <label for="empresa">Empresa / Entidade</label>
-              <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa ou entidade">
-            </div>
-            <div class="form-group">
-              <label for="tipo">Tipo de Membro</label>
-              <select id="tipo" name="tipo">
-                <option value="">Selecione o tipo</option>
-                <option value="parlamentar">Parlamentar</option>
-                <option value="empresario">Empresário</option>
-                <option value="lideranca">Liderança Civil</option>
-                <option value="institucional">Institucional</option>
-              </select>
-            </div>
-            <div class="form-group form-group--full">
-              <label for="mensagem">Mensagem / Motivação</label>
-              <textarea id="mensagem" name="mensagem" placeholder="Conte-nos sobre sua trajetória e motivação para associar-se à OPESP..."></textarea>
-            </div>
+      <div style="max-width: 720px; margin: 0 auto;">
+        <div class="section-header center text-center" style="margin-bottom: 48px;">
+          <span class="section-label">Pré-candidatura</span>
+          <h2 class="section-title" id="form-title">Solicite sua filiação</h2>
+          <div class="gold-divider center"></div>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Preencha o formulário abaixo com suas informações. Nossa equipe analisará sua solicitação e entrará em contato para dar continuidade ao processo de candidatura.
+          </p>
+        </div>
+        <form style="background: var(--bg-white); padding: 56px; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow);" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome completo" autocomplete="name" required />
           </div>
-          <div class="form-submit" style="text-align:center;">
-            <button type="submit" class="btn btn--gold"><i class="fas fa-paper-plane"></i> Enviar Solicitação</button>
+          <div class="form-group">
+            <label class="form-label" for="email">E-mail</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="seu@email.com.br" autocomplete="email" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(11) 99999-9999" autocomplete="tel" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cargo">Cargo / Atuação</label>
+            <input type="text" id="cargo" name="cargo" class="form-control" placeholder="Ex: Vereador, Deputado, Empresário..." required />
+            <p class="form-note">Descreva brevemente seu cargo ou sua principal área de atuação.</p>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" class="form-control" placeholder="Conte brevemente sua trajetória e por que deseja fazer parte da OPESP..." rows="5"></textarea>
+          </div>
+          <div style="margin-top: 8px;">
+            <button type="submit" class="btn btn-gold btn-lg" style="width: 100%; justify-content: center;">Enviar Solicitação de Filiação</button>
+            <p class="form-note" style="text-align: center; margin-top: 16px;">Ao enviar, você concorda com a análise de seus dados pela equipe da OPESP para fins de avaliação de candidatura.</p>
           </div>
         </form>
       </div>
     </div>
   </section>
 
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <div class="footer__logo">OPESP<span>.</span></div>
-        <p class="footer__desc">Ordem dos Parlamentares do Estado de São Paulo — Entidade civil de direito privado, fundada em 21 de maio de 1994.</p>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">OPESP</span>
+          <span class="footer-logo-sub">Ordem dos Parlamentares do Estado de São Paulo</span>
+          <p class="footer-desc">Desde 1994, reunindo parlamentares e lideranças paulistas em torno do reconhecimento, da colaboração e do desenvolvimento do Estado de São Paulo.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Navegação</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="historia.html">Nossa História</a>
+            <a href="premio.html">Prêmio Top Business</a>
+            <a href="eventos.html">Grandes Eventos</a>
+            <a href="consultoria.html">Consultoria</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Institucional</p>
+          <div class="footer-links">
+            <a href="membros.html">Membros</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="videos.html">Vídeos</a>
+            <a href="parcerias.html">Parcerias</a>
+            <a href="seja-membro.html">Seja Membro</a>
+            <a href="contato.html">Contato</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Contato</p>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>contato@opesp.org.br</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp disponível</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>São Paulo, SP</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Navegação</h4>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="historia.html">Nossa História</a></li>
-          <li><a href="premio.html">Prêmio Top Business</a></li>
-          <li><a href="consultoria.html">Consultoria</a></li>
-          <li><a href="eventos.html">Eventos</a></li>
-          <li><a href="membros.html">Membros</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Mais</h4>
-        <ul>
-          <li><a href="noticias.html">Notícias</a></li>
-          <li><a href="videos.html">Vídeos</a></li>
-          <li><a href="parcerias.html">Parcerias</a></li>
-          <li><a href="seja-membro.html">Seja Membro</a></li>
-          <li><a href="contato.html">Fale Conosco</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__col-title">Informações Legais</h4>
-        <ul class="footer__legal">
-          <li><i class="fas fa-file-alt"></i> Registro nº 282.360/94</li>
-          <li><i class="fas fa-balance-scale"></i> Lei Federal nº 10.406/2002</li>
-          <li><i class="fas fa-building"></i> Mantenedora: Aslam Innovations</li>
-          <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP — Brasil</li>
-        </ul>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copyright">&copy; 2025 OPESP. Presidenta: Gabriela Aguiar. Desenvolvido por <a href="#">Aslam Innovations</a>.</p>
+          <div class="footer-legal">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <p>&copy; 2026 OPESP — Ordem dos Parlamentares do Estado de São Paulo. Todos os direitos reservados.</p>
-    </div>
-  </div>
-  <button class="back-to-top" aria-label="Voltar ao topo" id="backToTop"><i class="fas fa-chevron-up"></i></button>
-</footer>
+  </footer>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
