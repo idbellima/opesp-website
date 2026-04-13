@@ -2,7 +2,12 @@
    OPESP - Main JavaScript
    ============================================================ */
 
-/* Member photo fallback - called via onerror on member images */
+/**
+ * Fallback handler for member photo images.
+ * Called via onerror attribute on <img> elements inside .member-card__photo.
+ * Replaces the broken image with a generic user icon placeholder.
+ * @param {HTMLImageElement} img - The image element that failed to load
+ */
 function memberPhotoFallback(img) {
   var container = img.parentElement;
   container.innerHTML = '<i class="fa-solid fa-user" style="font-size:2.2rem;color:rgba(255,255,255,0.5);"></i>';
