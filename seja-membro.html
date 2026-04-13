@@ -32,6 +32,17 @@
         <a href="contato.html">Contato</a>
       </div>
       <div class="navbar-actions">
+        <div class="lang-switcher">
+          <a href="#" class="lang-switcher__item active" data-lang="pt" title="Português" onclick="setLang(this); return false;">
+            <svg class="lang-flag" viewBox="0 0 640 480" width="20" height="15"><rect width="640" height="480" fill="#009c3b"/><polygon points="320,40 600,240 320,440 40,240" fill="#ffdf00"/><circle cx="320" cy="240" r="100" fill="#002776"/></svg>
+          </a>
+          <a href="#" class="lang-switcher__item" data-lang="en" title="English" onclick="setLang(this); return false;">
+            <svg class="lang-flag" viewBox="0 0 640 480" width="20" height="15"><rect width="640" height="480" fill="#012169"/><path d="M0,0 L640,480 M640,0 L0,480" stroke="#fff" stroke-width="60"/><path d="M0,0 L640,480 M640,0 L0,480" stroke="#C8102E" stroke-width="40"/><path d="M320,0 V480 M0,240 H640" stroke="#fff" stroke-width="100"/><path d="M320,0 V480 M0,240 H640" stroke="#C8102E" stroke-width="60"/></svg>
+          </a>
+          <a href="#" class="lang-switcher__item" data-lang="es" title="Español" onclick="setLang(this); return false;">
+            <svg class="lang-flag" viewBox="0 0 640 480" width="20" height="15"><rect width="640" height="120" fill="#AA151B"/><rect y="120" width="640" height="240" fill="#F1BF00"/><rect y="360" width="640" height="120" fill="#AA151B"/></svg>
+          </a>
+        </div>
         <a href="seja-membro.html" class="btn btn-gold btn-sm active">Seja Membro</a>
         <button class="navbar-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
           <span></span><span></span><span></span>
