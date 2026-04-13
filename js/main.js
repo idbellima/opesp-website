@@ -2,6 +2,37 @@
    OPESP - Main JavaScript
    ============================================================ */
 
+/* ----------------------------------------------------------
+   Language Switcher (global, called via onclick in HTML)
+---------------------------------------------------------- */
+function setLang(btn) {
+  var lang = btn.getAttribute('data-lang');
+
+  // Update active state on ALL lang switcher items (desktop + mobile)
+  document.querySelectorAll('.lang-switcher__item').forEach(function(b) {
+    b.classList.remove('active');
+  });
+  document.querySelectorAll('.lang-switcher__item[data-lang="' + lang + '"]').forEach(function(b) {
+    b.classList.add('active');
+  });
+
+  // Translate all elements with data-{lang} attributes
+  document.querySelectorAll('[data-pt],[data-en],[data-es]').forEach(function(el) {
+    var text = el.getAttribute('data-' + lang);
+    if (text === null) return;
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = text;
+    } else if (text.indexOf('<') !== -1) {
+      el.innerHTML = text;
+    } else {
+      el.textContent = text;
+    }
+  });
+
+  // Save preference
+  localStorage.setItem('opesp-lang', lang);
+}
+
 /**
  * Fallback handler for member photo images.
  * Called via onerror attribute on <img> elements inside .member-card__photo.
@@ -210,5 +241,16 @@ function memberPhotoFallback(img) {
       });
     });
   }
+
+  /* ----------------------------------------------------------
+     Load Saved Language Preference
+  ---------------------------------------------------------- */
+  (function loadSavedLang() {
+    var saved = localStorage.getItem('opesp-lang');
+    if (saved && saved !== 'pt') {
+      var btn = document.querySelector('.lang-switcher__item[data-lang="' + saved + '"]');
+      if (btn) setLang(btn);
+    }
+  })();
 
 })();
