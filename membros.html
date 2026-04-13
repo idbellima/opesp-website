@@ -7,7 +7,9 @@
   <meta name="description" content="Um círculo seleto de líderes que fazem a diferença. Conheça os membros da Ordem dos Parlamentares do Estado de São Paulo." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -17,10 +19,7 @@
   <nav class="navbar" id="navbar" role="navigation" aria-label="Navegação principal">
     <div class="navbar-inner">
       <a href="index.html" class="navbar-logo" aria-label="OPESP - Página inicial">
-        <div class="navbar-logo-badge">
-          <span class="navbar-logo-text">OPESP</span>
-          <span class="navbar-logo-sub">Estado de São Paulo</span>
-        </div>
+        <img src="images/logo.png" alt="OPESP" class="nav__logo-img" />
       </a>
       <div class="navbar-links">
         <a href="index.html">Home</a>
@@ -31,7 +30,6 @@
         <a href="membros.html" class="active">Membros</a>
         <a href="noticias.html">Notícias</a>
         <a href="videos.html">Vídeos</a>
-        <a href="parcerias.html">Parcerias</a>
         <a href="contato.html">Contato</a>
       </div>
       <div class="navbar-actions">
@@ -53,7 +51,6 @@
     <a href="membros.html" class="active">Membros</a>
     <a href="noticias.html">Notícias</a>
     <a href="videos.html">Vídeos</a>
-    <a href="parcerias.html">Parcerias</a>
     <a href="contato.html">Contato</a>
     <a href="seja-membro.html" class="btn btn-gold">Seja Membro</a>
   </div>
@@ -62,7 +59,7 @@
   <section class="page-banner" aria-label="Membros OPESP">
     <div class="container">
       <span class="page-banner-label">Círculo de Excelência</span>
-      <h1 class="page-banner-title">Membros OPESP</h1>
+      <h1 class="page-banner-title">Líderes que constroem São Paulo e o Brasil</h1>
       <p class="page-banner-sub">Um círculo seleto de líderes que fazem a diferença em São Paulo e no Brasil.</p>
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
@@ -77,10 +74,10 @@
     <div class="container">
       <div class="section-header center text-center" style="max-width: 720px; margin: 0 auto;">
         <span class="section-label">Quem integra a OPESP</span>
-        <h2 class="section-title" id="membros-intro">Líderes que constroem São Paulo</h2>
+        <h2 class="section-title" id="membros-intro">Líderes que constroem São Paulo e o Brasil</h2>
         <div class="gold-divider center"></div>
         <p class="section-subtitle" style="margin: 0 auto 40px;">
-          A OPESP reune parlamentares e personalidades que se distinguem pelo compromisso com o desenvolvimento do Estado de São Paulo. A admissão é baseada em mérito e alinhamento com os valores da instituição.
+          Conheça os membros que fazem parte da OPESP, lideranças comprometidas com o desenvolvimento do Estado de São Paulo.
         </p>
       </div>
       <div class="filter-bar" style="max-width: 600px; margin: 0 auto;">
@@ -95,84 +92,108 @@
       <div class="grid-4" id="members-grid">
 
         <div class="member-card slide-up" data-name="Ana Paula Silveira" data-area="legislativo municipal">
-          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <div class="member-card__photo">
+            <img src="images/membros/membro-01.jpg" alt="Ana Paula Silveira" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:2.2rem;color:rgba(255,255,255,0.5);\' ></i>'; this.parentElement.style.background='linear-gradient(135deg, #0D1B35, #243A6A)';" />
+          </div>
           <h3 class="member-name">Ana Paula Silveira</h3>
           <p class="member-role">Vereadora - São Paulo</p>
           <p class="member-area">Legislativo Municipal</p>
         </div>
 
         <div class="member-card slide-up" data-delay="50" data-name="Carlos Eduardo Moraes" data-area="legislativo estadual">
-          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <div class="member-card__photo">
+            <img src="images/membros/membro-02.jpg" alt="Carlos Eduardo Moraes" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:2.2rem;color:rgba(255,255,255,0.5);\' ></i>'; this.parentElement.style.background='linear-gradient(135deg, #0D1B35, #243A6A)';" />
+          </div>
           <h3 class="member-name">Carlos Eduardo Moraes</h3>
           <p class="member-role">Deputado Estadual</p>
           <p class="member-area">Legislativo Estadual</p>
         </div>
 
         <div class="member-card slide-up" data-delay="100" data-name="Fernanda Ribeiro Costa" data-area="legislativo federal">
-          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <div class="member-card__photo">
+            <img src="images/membros/membro-03.jpg" alt="Fernanda Ribeiro Costa" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:2.2rem;color:rgba(255,255,255,0.5);\' ></i>'; this.parentElement.style.background='linear-gradient(135deg, #0D1B35, #243A6A)';" />
+          </div>
           <h3 class="member-name">Fernanda Ribeiro Costa</h3>
           <p class="member-role">Deputada Federal</p>
           <p class="member-area">Legislativo Federal</p>
         </div>
 
         <div class="member-card slide-up" data-delay="150" data-name="Roberto Almeida Netto" data-area="legislativo municipal">
-          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <div class="member-card__photo">
+            <img src="images/membros/membro-04.jpg" alt="Roberto Almeida Netto" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:2.2rem;color:rgba(255,255,255,0.5);\' ></i>'; this.parentElement.style.background='linear-gradient(135deg, #0D1B35, #243A6A)';" />
+          </div>
           <h3 class="member-name">Roberto Almeida Netto</h3>
           <p class="member-role">Vereador - Campinas</p>
           <p class="member-area">Legislativo Municipal</p>
         </div>
 
         <div class="member-card slide-up" data-name="Sônia Aparecida Lopes" data-area="legislativo estadual">
-          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <div class="member-card__photo">
+            <img src="images/membros/membro-05.jpg" alt="Sônia Aparecida Lopes" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:2.2rem;color:rgba(255,255,255,0.5);\' ></i>'; this.parentElement.style.background='linear-gradient(135deg, #0D1B35, #243A6A)';" />
+          </div>
           <h3 class="member-name">Sônia Aparecida Lopes</h3>
           <p class="member-role">Deputada Estadual</p>
           <p class="member-area">Legislativo Estadual</p>
         </div>
 
         <div class="member-card slide-up" data-delay="50" data-name="Marcelo Henrique Viana" data-area="legislativo federal">
-          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <div class="member-card__photo">
+            <img src="images/membros/membro-06.jpg" alt="Marcelo Henrique Viana" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:2.2rem;color:rgba(255,255,255,0.5);\' ></i>'; this.parentElement.style.background='linear-gradient(135deg, #0D1B35, #243A6A)';" />
+          </div>
           <h3 class="member-name">Marcelo Henrique Viana</h3>
           <p class="member-role">Deputado Federal</p>
           <p class="member-area">Legislativo Federal</p>
         </div>
 
         <div class="member-card slide-up" data-delay="100" data-name="Patrícia Drummond" data-area="legislativo municipal">
-          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <div class="member-card__photo">
+            <img src="images/membros/membro-07.jpg" alt="Patrícia Drummond" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:2.2rem;color:rgba(255,255,255,0.5);\' ></i>'; this.parentElement.style.background='linear-gradient(135deg, #0D1B35, #243A6A)';" />
+          </div>
           <h3 class="member-name">Patrícia Drummond</h3>
           <p class="member-role">Vereadora - Santos</p>
           <p class="member-area">Legislativo Municipal</p>
         </div>
 
         <div class="member-card slide-up" data-delay="150" data-name="Augusto Cavalcante" data-area="legislativo estadual">
-          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <div class="member-card__photo">
+            <img src="images/membros/membro-08.jpg" alt="Augusto Cavalcante" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:2.2rem;color:rgba(255,255,255,0.5);\' ></i>'; this.parentElement.style.background='linear-gradient(135deg, #0D1B35, #243A6A)';" />
+          </div>
           <h3 class="member-name">Augusto Cavalcante</h3>
           <p class="member-role">Deputado Estadual</p>
           <p class="member-area">Legislativo Estadual</p>
         </div>
 
         <div class="member-card slide-up" data-name="Juliana Fonseca Braga" data-area="legislativo municipal">
-          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <div class="member-card__photo">
+            <img src="images/membros/membro-09.jpg" alt="Juliana Fonseca Braga" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:2.2rem;color:rgba(255,255,255,0.5);\' ></i>'; this.parentElement.style.background='linear-gradient(135deg, #0D1B35, #243A6A)';" />
+          </div>
           <h3 class="member-name">Juliana Fonseca Braga</h3>
           <p class="member-role">Vereadora - Guarulhos</p>
           <p class="member-area">Legislativo Municipal</p>
         </div>
 
         <div class="member-card slide-up" data-delay="50" data-name="Rodrigo Machado Pires" data-area="legislativo federal">
-          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <div class="member-card__photo">
+            <img src="images/membros/membro-10.jpg" alt="Rodrigo Machado Pires" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:2.2rem;color:rgba(255,255,255,0.5);\' ></i>'; this.parentElement.style.background='linear-gradient(135deg, #0D1B35, #243A6A)';" />
+          </div>
           <h3 class="member-name">Rodrigo Machado Pires</h3>
           <p class="member-role">Deputado Federal</p>
           <p class="member-area">Legislativo Federal</p>
         </div>
 
         <div class="member-card slide-up" data-delay="100" data-name="Luciane Tavares Monteiro" data-area="legislativo estadual">
-          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <div class="member-card__photo">
+            <img src="images/membros/membro-11.jpg" alt="Luciane Tavares Monteiro" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:2.2rem;color:rgba(255,255,255,0.5);\' ></i>'; this.parentElement.style.background='linear-gradient(135deg, #0D1B35, #243A6A)';" />
+          </div>
           <h3 class="member-name">Luciane Tavares Monteiro</h3>
           <p class="member-role">Deputada Estadual</p>
           <p class="member-area">Legislativo Estadual</p>
         </div>
 
         <div class="member-card slide-up" data-delay="150" data-name="Eduardo Santana Filho" data-area="legislativo municipal">
-          <div class="member-avatar"><i class="fa-solid fa-user"></i></div>
+          <div class="member-card__photo">
+            <img src="images/membros/membro-12.jpg" alt="Eduardo Santana Filho" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-user\' style=\'font-size:2.2rem;color:rgba(255,255,255,0.5);\' ></i>'; this.parentElement.style.background='linear-gradient(135deg, #0D1B35, #243A6A)';" />
+          </div>
           <h3 class="member-name">Eduardo Santana Filho</h3>
           <p class="member-role">Vereador - São Bernardo do Campo</p>
           <p class="member-area">Legislativo Municipal</p>
@@ -227,7 +248,6 @@
             <a href="membros.html">Membros</a>
             <a href="noticias.html">Notícias</a>
             <a href="videos.html">Vídeos</a>
-            <a href="parcerias.html">Parcerias</a>
             <a href="seja-membro.html">Seja Membro</a>
             <a href="contato.html">Contato</a>
           </div>
@@ -237,15 +257,19 @@
           <div class="footer-contact-info">
             <div class="footer-contact-item">
               <i class="fa-solid fa-envelope"></i>
-              <span>contato@opesp.org.br</span>
+              <a href="mailto:presidencia@opesp.org" style="color:inherit;">presidencia@opesp.org</a>
             </div>
             <div class="footer-contact-item">
               <i class="fa-brands fa-whatsapp"></i>
-              <span>WhatsApp disponível</span>
+              <a href="https://wa.me/551152832997" target="_blank" rel="noopener" style="color:inherit;">(11) 5283-2997</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+551152832997" style="color:inherit;">(11) 5283-2997</a>
             </div>
             <div class="footer-contact-item">
               <i class="fa-solid fa-location-dot"></i>
-              <span>São Paulo, SP</span>
+              <span>Av. Brig. Luís Antônio, 1564, SP</span>
             </div>
           </div>
         </div>

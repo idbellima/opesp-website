@@ -7,7 +7,9 @@
   <meta name="description" content="Conheça a história da OPESP desde sua fundação em 1994 pelo Vereador Antonio Carlos Fernandes até os dias atuais sob a presidência de Gabriela Aguiar." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -17,10 +19,7 @@
   <nav class="navbar" id="navbar" role="navigation" aria-label="Navegação principal">
     <div class="navbar-inner">
       <a href="index.html" class="navbar-logo" aria-label="OPESP - Página inicial">
-        <div class="navbar-logo-badge">
-          <span class="navbar-logo-text">OPESP</span>
-          <span class="navbar-logo-sub">Estado de São Paulo</span>
-        </div>
+        <img src="images/logo.png" alt="OPESP" class="nav__logo-img" />
       </a>
       <div class="navbar-links">
         <a href="index.html">Home</a>
@@ -31,7 +30,6 @@
         <a href="membros.html">Membros</a>
         <a href="noticias.html">Notícias</a>
         <a href="videos.html">Vídeos</a>
-        <a href="parcerias.html">Parcerias</a>
         <a href="contato.html">Contato</a>
       </div>
       <div class="navbar-actions">
@@ -53,7 +51,6 @@
     <a href="membros.html">Membros</a>
     <a href="noticias.html">Notícias</a>
     <a href="videos.html">Vídeos</a>
-    <a href="parcerias.html">Parcerias</a>
     <a href="contato.html">Contato</a>
     <a href="seja-membro.html" class="btn btn-gold">Seja Membro</a>
   </div>
@@ -98,6 +95,41 @@
     </div>
   </section>
 
+
+
+  <!-- MISSAO -->
+  <section class="section bg-white" aria-labelledby="missao-title">
+    <div class="container">
+      <div class="section-header center text-center" style="margin-bottom: 60px;">
+        <span class="section-label">Propósito</span>
+        <h2 class="section-title" id="missao-title">Missão, Visão e Valores</h2>
+        <div class="gold-divider center"></div>
+      </div>
+      <div class="grid-3">
+        <div class="card slide-up" style="border-top: 3px solid var(--gold);">
+          <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3 class="card-title">Missão</h3>
+          <p class="card-text">
+            Reunir, valorizar e fortalecer parlamentares e lideranças do Estado de São Paulo, promovendo o reconhecimento de quem contribui para o desenvolvimento político, social e econômico paulista.
+          </p>
+        </div>
+        <div class="card slide-up" data-delay="100" style="border-top: 3px solid var(--gold);">
+          <div class="card-icon"><i class="fa-solid fa-eye"></i></div>
+          <h3 class="card-title">Visão</h3>
+          <p class="card-text">
+            Ser reconhecida como a principal ordem institucional do Estado de São Paulo, referência em excelência, integridade e compromisso com o desenvolvimento da sociedade paulista.
+          </p>
+        </div>
+        <div class="card slide-up" data-delay="200" style="border-top: 3px solid var(--gold);">
+          <div class="card-icon"><i class="fa-solid fa-gem"></i></div>
+          <h3 class="card-title">Valores</h3>
+          <p class="card-text">
+            Integridade, excelência, autonomia institucional, respeito à diversidade política, compromisso público e valorização das personalidades que fazem São Paulo ser São Paulo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- TIMELINE HORIZONTAL -->
   <section class="timeline-section" aria-labelledby="timeline-title">
     <div class="container">
@@ -169,40 +201,6 @@
               <span class="timeline-badge">Presidente Atual</span>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MISSAO -->
-  <section class="section bg-white" aria-labelledby="missao-title">
-    <div class="container">
-      <div class="section-header center text-center" style="margin-bottom: 60px;">
-        <span class="section-label">Propósito</span>
-        <h2 class="section-title" id="missao-title">Missão, Visão e Valores</h2>
-        <div class="gold-divider center"></div>
-      </div>
-      <div class="grid-3">
-        <div class="card slide-up" style="border-top: 3px solid var(--gold);">
-          <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
-          <h3 class="card-title">Missão</h3>
-          <p class="card-text">
-            Reunir, valorizar e fortalecer parlamentares e lideranças do Estado de São Paulo, promovendo o reconhecimento de quem contribui para o desenvolvimento político, social e econômico paulista.
-          </p>
-        </div>
-        <div class="card slide-up" data-delay="100" style="border-top: 3px solid var(--gold);">
-          <div class="card-icon"><i class="fa-solid fa-eye"></i></div>
-          <h3 class="card-title">Visão</h3>
-          <p class="card-text">
-            Ser reconhecida como a principal ordem institucional do Estado de São Paulo, referência em excelência, integridade e compromisso com o desenvolvimento da sociedade paulista.
-          </p>
-        </div>
-        <div class="card slide-up" data-delay="200" style="border-top: 3px solid var(--gold);">
-          <div class="card-icon"><i class="fa-solid fa-gem"></i></div>
-          <h3 class="card-title">Valores</h3>
-          <p class="card-text">
-            Integridade, excelência, autonomia institucional, respeito à diversidade política, compromisso público e valorização das personalidades que fazem São Paulo ser São Paulo.
-          </p>
         </div>
       </div>
     </div>
@@ -342,7 +340,6 @@
             <a href="membros.html">Membros</a>
             <a href="noticias.html">Notícias</a>
             <a href="videos.html">Vídeos</a>
-            <a href="parcerias.html">Parcerias</a>
             <a href="seja-membro.html">Seja Membro</a>
             <a href="contato.html">Contato</a>
           </div>
@@ -352,15 +349,19 @@
           <div class="footer-contact-info">
             <div class="footer-contact-item">
               <i class="fa-solid fa-envelope"></i>
-              <span>contato@opesp.org.br</span>
+              <a href="mailto:presidencia@opesp.org" style="color:inherit;">presidencia@opesp.org</a>
             </div>
             <div class="footer-contact-item">
               <i class="fa-brands fa-whatsapp"></i>
-              <span>WhatsApp disponível</span>
+              <a href="https://wa.me/551152832997" target="_blank" rel="noopener" style="color:inherit;">(11) 5283-2997</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+551152832997" style="color:inherit;">(11) 5283-2997</a>
             </div>
             <div class="footer-contact-item">
               <i class="fa-solid fa-location-dot"></i>
-              <span>São Paulo, SP</span>
+              <span>Av. Brig. Luís Antônio, 1564, SP</span>
             </div>
           </div>
         </div>
