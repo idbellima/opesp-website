@@ -25,7 +25,8 @@
   --section-dark: #0D1B35;
   --section-dark-text: #F1F5F9;
 
-  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-display: 'Poppins', Arial, sans-serif;
+  --font-body: 'Inter', Arial, sans-serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
   --radius: 8px;
@@ -80,7 +81,7 @@ button, input, textarea, select {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   color: var(--text-dark);
   line-height: 1.25;
   font-weight: 700;
@@ -121,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   color: var(--text-dark);
@@ -272,8 +273,14 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.nav__logo-img {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
 .navbar-logo-text {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--navy);
@@ -471,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(2.4rem, 5.5vw, 4.2rem);
   font-weight: 700;
   color: #FFFFFF;
@@ -547,7 +554,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stat-number {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(2.2rem, 4vw, 3.2rem);
   font-weight: 700;
   color: var(--gold);
@@ -629,7 +636,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -675,7 +682,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-name {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -727,24 +734,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline-wrapper {
-  overflow-x: auto;
-  padding: 60px 0 20px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  scrollbar-color: var(--gold) var(--bg-light);
-}
-
-.timeline-wrapper::-webkit-scrollbar {
-  height: 6px;
-}
-
-.timeline-wrapper::-webkit-scrollbar-track {
-  background: var(--bg-light);
-}
-
-.timeline-wrapper::-webkit-scrollbar-thumb {
-  background: var(--gold);
-  border-radius: 3px;
+  padding: 40px 0 20px;
 }
 
 .timeline-track {
@@ -756,13 +746,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline-items {
-  display: flex;
-  flex-direction: row;
-  min-width: max-content;
-  gap: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
   position: relative;
   z-index: 1;
-  padding: 0 2rem;
 }
 
 .timeline-items::before {
@@ -781,10 +770,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 16px;
-  min-width: 280px;
-  min-height: 420px;
-  justify-content: center;
+  padding: 0;
+  min-width: unset;
+  justify-content: flex-start;
 }
 
 .timeline-dot-wrapper {
@@ -815,8 +803,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline-year {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--gold-dark);
   margin-bottom: 4px;
@@ -827,10 +815,12 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--bg-white);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 28px;
+  padding: 1rem;
   text-align: center;
   box-shadow: var(--shadow-sm);
   transition: transform var(--transition), box-shadow var(--transition);
+  font-size: 0.9rem;
+  width: 100%;
 }
 
 .timeline-item:hover .timeline-card {
@@ -839,7 +829,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline-name {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -879,8 +869,16 @@ h1, h2, h3, h4, h5, h6 {
    ============================================================ */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.gallery-item__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #F0F1F3;
 }
 
 .gallery-grid-3 {
@@ -985,7 +983,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .event-card-ph-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -997,7 +995,8 @@ h1, h2, h3, h4, h5, h6 {
    ============================================================ */
 .page-banner {
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-  padding: 120px 0 64px;
+  padding: 80px 0 30px;
+  min-height: unset;
   position: relative;
   overflow: hidden;
   margin-top: 72px;
@@ -1040,8 +1039,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-banner-title {
-  font-family: var(--font-serif);
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 1.8rem);
   font-weight: 700;
   color: #FFFFFF;
   margin-bottom: 16px;
@@ -1098,7 +1097,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .notice-card-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -1140,13 +1139,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 700;
 }
 
 .objective-content h4 {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -1212,7 +1211,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .video-card-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -1282,7 +1281,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .news-card-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -1347,8 +1346,33 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255,255,255,0.5);
 }
 
+.member-card__photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 16px;
+  border: 2px solid var(--border);
+}
+
+.member-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-card__badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  display: block;
+  margin-bottom: 4px;
+}
+
 .member-name {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -1677,7 +1701,7 @@ textarea.form-control {
 }
 
 .award-feature-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 700;
   color: #fff;
@@ -1743,7 +1767,7 @@ textarea.form-control {
 .footer-brand {}
 
 .footer-logo {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
@@ -1968,7 +1992,7 @@ textarea.form-control {
 }
 
 .service-number {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 4rem;
   font-weight: 700;
   color: var(--border);
@@ -2041,7 +2065,7 @@ textarea.form-control {
 }
 
 .benefit-content h4 {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 700;
   color: var(--text-dark);
@@ -2080,7 +2104,7 @@ textarea.form-control {
   }
 
   .timeline-items {
-    min-width: max-content;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -2190,7 +2214,7 @@ textarea.form-control {
   }
 
   .timeline-items {
-    min-width: max-content;
+    grid-template-columns: 1fr;
   }
 
   .stats-grid {
