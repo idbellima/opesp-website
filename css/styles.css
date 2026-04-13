@@ -1366,6 +1366,18 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
 }
 
+.member-card__photo.no-photo {
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  overflow: visible;
+}
+
 .member-card__badge {
   font-size: 0.7rem;
   font-weight: 600;
