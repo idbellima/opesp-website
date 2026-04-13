@@ -2,6 +2,16 @@
    OPESP - Main JavaScript
    ============================================================ */
 
+/* Member photo fallback - called via onerror on member images */
+function memberPhotoFallback(img) {
+  var container = img.parentElement;
+  container.innerHTML = '<i class="fa-solid fa-user" style="font-size:2.2rem;color:rgba(255,255,255,0.5);"></i>';
+  container.style.background = 'linear-gradient(135deg, #0D1B35, #243A6A)';
+  container.style.display = 'flex';
+  container.style.alignItems = 'center';
+  container.style.justifyContent = 'center';
+}
+
 (function () {
   'use strict';
 

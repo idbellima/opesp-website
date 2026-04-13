@@ -870,6 +870,22 @@ h1, h2, h3, h4, h5, h6 {
   background: #F0F1F3;
 }
 
+.evento-section,
+.edicao-section {
+  margin-bottom: 3rem;
+}
+
+.evento-title,
+.edicao-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--gold);
+}
+
 .gallery-grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
